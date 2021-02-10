@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "nodemon" : "sass source/styles/index.scss public/css/styles.css & node ./bin/www",
     "start": "sass source/styles/index.scss public/css/styles.css & node ./bin/www"
   },
   "dependencies": {
