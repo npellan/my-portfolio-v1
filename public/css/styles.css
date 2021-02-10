@@ -163,34 +163,30 @@ button {
   outline: 0;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-}
-
 .np-svg1 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 200px;
   z-index: -1;
 }
 
 .np-svg2 {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 200px;
   z-index: -1;
 }
 
 .np-svg3 {
   position: absolute;
   top: 0;
-  right: 40px;
+  right: 200px;
   z-index: -1;
 }
 
 .np-line1 {
   fill: none;
-  stroke: #F4F09F;
+  stroke: #CCC5B9;
   stroke-width: 17px;
   stroke-dasharray: 981.6414794922;
   stroke-dashoffset: 981.6414794922;
@@ -199,7 +195,7 @@ body {
 
 .np-line2 {
   fill: none;
-  stroke: #B3D4EC;
+  stroke: #CCC5B9;
   stroke-width: 17px;
   stroke-dasharray: 2633.2145996094;
   stroke-dashoffset: 2633.2145996094;
@@ -208,7 +204,7 @@ body {
 
 .np-line3 {
   fill: none;
-  stroke: #D4EFE4;
+  stroke: #CCC5B9;
   stroke-width: 17px;
   stroke-dasharray: 1583.5125732422;
   stroke-dashoffset: 1583.5125732422;
@@ -220,52 +216,191 @@ body {
     stroke-dashoffset: 0;
   }
 }
-.np-container {
-  max-width: 1440px;
-  width: 80%;
-  margin: 2rem auto 1rem;
+.button {
+  background-color: #EB5E28;
+  width: 175px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: 3rem;
+  transition: width 1s;
+}
+.button:hover {
+  width: 250px;
 }
 
-.np-header__top {
+.button-text {
+  position: absolute;
+  top: -10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.np-main__projects__container {
+  position: relative;
+  max-width: 350px;
+}
+
+/* Make the image to responsive */
+.np-main__projects__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.np-main__projects__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.np-main__projects__overlay > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.np-main__projects__container:hover .np-main__projects__overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .np-main__projects {
+    flex-wrap: wrap;
+  }
+
+  .np-main__projects__container {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .np-main__projects {
+    flex-wrap: wrap;
+  }
+
+  .np-main__projects__container {
+    margin-bottom: 1rem;
+  }
+}
+body {
+  font-family: "Raleway", sans-serif;
+  color: #353531;
+}
+
+.np-container {
+  max-width: 1200px;
+  margin: 5rem auto 1rem;
+  width: 80%;
+}
+
+.np-header .np-header__top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
+  align-items: center;
+  margin-bottom: 7rem;
 }
-
-.np-logo {
+.np-header .np-logo {
   font-family: "Cookie", sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 4rem;
 }
-
-.np-nav > ul {
+.np-header .np-nav > ul {
   display: flex;
 }
-
-.np-nav__item {
-  padding-left: 1rem;
+.np-header .np-nav__item {
+  margin-left: 2rem;
 }
-
-.np-header__hero {
-  margin-bottom: 3rem;
+.np-header .np-nav__item a:hover {
+  border-bottom: 2px solid #353531;
 }
-
-.np-header__hero__title {
+.np-header .np-header__hero {
+  margin-bottom: 7rem;
+}
+.np-header .np-header__hero__hi {
+  margin-bottom: 1rem;
+}
+.np-header .np-header__hero__title {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 4rem;
 }
-
-.np-header__hero__subtitle {
-  font-size: 1.5rem;
+.np-header .np-header__hero__subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .np-main__section {
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
+}
+.np-main__section .np-main__section__title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.np-main__section .np-main__section__subtitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.np-main__section .np-main__section__text {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  width: 80%;
+}
+.np-main__section .np-main__section__button {
+  border: 0;
+  background-color: red;
+  padding: 1rem;
+}
+.np-main__section .np-main__section__button:hover {
+  transform: scale(1.5);
+}
+.np-main__section .np-main__projects {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.np-main__section__title {
+.np-footer .np-footer__title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+.np-footer .np-footer__infos {
+  font-size: 1.5rem;
+}
+.np-footer .np-footer__nav > ul {
+  display: flex;
+}
+.np-footer .np-footer__findme {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.np-footer .np-footer__nav__item {
+  padding-right: 1rem;
+}
+.np-footer .np-footer__nav__item a:hover {
+  border-bottom: 2px solid #353531;
 }
 
 /*# sourceMappingURL=styles.css.map */

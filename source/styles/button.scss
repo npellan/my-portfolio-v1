@@ -1,0 +1,27 @@
+@use 'vars';
+
+.button {
+    background-color: vars.$button-color;
+    width: 175px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: width 1s;
+
+    &:hover {
+        width: 250px;
+    }
+}
+
+.button-text {
+    position: absolute;
+    top: -10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+

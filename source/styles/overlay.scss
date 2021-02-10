@@ -1,0 +1,44 @@
+/* Container needed to position the overlay. Adjust the width as needed */
+.np-main__projects__container {
+    position: relative;
+    max-width: 350px;
+}
+  
+/* Make the image to responsive */
+.np-main__projects__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.np-main__projects__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba($color: #ffffff, $alpha: .5);
+
+    & > p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.np-main__projects__container:hover .np-main__projects__overlay {
+    opacity: 1;
+}
