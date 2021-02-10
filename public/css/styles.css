@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
 html,
 body,
@@ -160,6 +161,58 @@ button {
 input,
 button {
   outline: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.np-container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 2rem auto 1rem;
+}
+
+.np-header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.np-logo {
+  font-family: "Cookie", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.np-nav > ul {
+  display: flex;
+}
+
+.np-nav__item {
+  padding-left: 1rem;
+}
+
+.np-header__hero {
+  margin-bottom: 3rem;
+}
+
+.np-header__hero__title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.np-header__hero__subtitle {
+  font-size: 1.5rem;
+}
+
+.np-main__section {
+  margin-bottom: 3rem;
+}
+
+.np-main__section__title {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

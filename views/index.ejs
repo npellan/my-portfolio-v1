@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/css/styles.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='/css/styles.css' />
+  
+  <title><%= title %></title>
+</head>
+<body>
+  <div class="np-container">
+    <header class="np-header">
+      <div class="np-header__top">
+        <p class="np-logo">np</p>
+        <nav class="np-nav">
+          <ul>
+            <li class="np-nav__item"><a href="#">Projets</a></li>
+            <li class="np-nav__item"><a href="#">A propos</a></li>
+            <li class="np-nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="np-header__hero">
+        <h1 class="np-header__hero__title">Nicolas Pellan</h1>
+        <p class="np-header__hero__subtitle">Développeur fullstack Javascript</p>
+      </div>
+    </header>
+    <main class="np-main">
+      <section class="np-main__section">
+        <h2 class="np-main__section__title">A propos</h2>
+        <p class="np-main__section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, unde veniam perspiciatis harum sunt officia porro fugiat corporis placeat, doloribus quo reprehenderit, eum rerum delectus repudiandae? Illo nostrum consectetur pariatur.</p>
+      </section>
+      <section class="np-main__section">
+        <h2 class="np-main__section__title">Projets</h2>
+        <p class="np-main__section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, unde veniam perspiciatis harum sunt officia porro fugiat corporis placeat, doloribus quo reprehenderit, eum rerum delectus repudiandae? Illo nostrum consectetur pariatur.</p>
+      </section>
+    </main>
+    <footer class="np-footer">
+      <section class="np-footer__section">
+        <h2 class="np-footer__section__title">Contactez-moi</h2>
+      </section>
+    </footer>
+  </div>
+</body>
 </html>
