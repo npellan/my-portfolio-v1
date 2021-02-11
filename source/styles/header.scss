@@ -1,0 +1,48 @@
+@use 'vars';
+
+.np-header {
+
+    .np-header__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7rem;
+    }
+    
+    .np-logo {
+        font-family: 'Cookie', sans-serif;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    
+    .np-nav > ul {
+        display: flex;
+    }
+    
+    .np-nav__item {
+        margin-left: 2rem;
+        font-size: 1.2rem;
+
+        & a:hover {
+            border-bottom: 3px solid vars.$text-color;
+        }
+    }
+    
+    .np-header__hero {
+        margin-bottom: 7rem;
+    }
+
+    .np-header__hero__hi {
+        margin-bottom: 1rem;
+    }
+    
+    .np-header__hero__title {
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    
+    .np-header__hero__subtitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}

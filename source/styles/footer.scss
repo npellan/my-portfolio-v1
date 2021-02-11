@@ -1,0 +1,61 @@
+@use 'vars';
+
+.np-footer {
+
+    .np-footer__title {
+        font-weight: bold;
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+    }
+    
+    .np-footer__infos {
+        font-size: 1.5rem;
+    }
+    
+    .np-footer__nav > ul {
+        display: flex;
+    }
+
+    .np-footer__findme {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .np-footer__nav__item {
+        padding-right: 1rem;
+        font-weight: bold;
+    }
+
+    .np-footer__nav__item--github {
+        color: #24292d;
+
+        & a:hover {
+            border-bottom: 3px solid #24292d;
+        }
+    }
+
+    .np-footer__nav__item--linkedin {
+        color: #0b66c3;
+
+        & a:hover {
+            border-bottom: 3px solid #0b66c3;
+        }
+    }
+
+    .np-footer__nav__item--twitter {
+        color: #1da1f3;
+
+        & a:hover {
+            border-bottom: 3px solid #1da1f3;
+        }
+    }
+
+    .np-footer__nav__item--spotify {
+        color: #1dcf5d;
+
+        & a:hover {
+            border-bottom: 3px solid #1dcf5d;
+        }
+    }
+}

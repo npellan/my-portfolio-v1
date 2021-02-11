@@ -1,0 +1,33 @@
+@use 'vars';
+
+.np-main__section {
+    margin-bottom: 7rem;
+
+    .np-main__section__title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .np-main__section__subtitle {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .np-main__section__text {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        width: 80%;
+    }
+    
+    .np-main__section__button {
+        border: 0;
+        background-color: red;
+        padding: 1rem;
+    
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}

@@ -1,8 +1,14 @@
 @use 'reset';
 @use 'vars';
+
+@use 'header';
+@use 'main';
+@use 'footer';
+
 @use 'svg';
 @use 'button';
 @use 'projects';
+
 @use 'mediaqueries';
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap');
@@ -18,144 +24,3 @@ body {
     margin: 5rem auto 1rem;
     width: 80%;
 }
-
-.np-header {
-
-    .np-header__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 7rem;
-    }
-    
-    .np-logo {
-        font-family: 'Cookie', sans-serif;
-        font-weight: bold;
-        font-size: 4rem;
-    }
-    
-    .np-nav > ul {
-        display: flex;
-    }
-    
-    .np-nav__item {
-        margin-left: 2rem;
-
-        & a:hover {
-            border-bottom: 3px solid vars.$text-color;
-        }
-    }
-    
-    .np-header__hero {
-        margin-bottom: 7rem;
-    }
-
-    .np-header__hero__hi {
-        margin-bottom: 1rem;
-    }
-    
-    .np-header__hero__title {
-        font-weight: bold;
-        font-size: 4rem;
-    }
-    
-    .np-header__hero__subtitle {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-}
-
-
-.np-main__section {
-    margin-bottom: 7rem;
-
-    .np-main__section__title {
-        font-weight: bold;
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-    
-    .np-main__section__subtitle {
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .np-main__section__text {
-        margin-bottom: 1rem;
-        line-height: 1.5;
-        width: 80%;
-    }
-    
-    .np-main__section__button {
-        border: 0;
-        background-color: red;
-        padding: 1rem;
-    
-        &:hover {
-            transform: scale(1.5);
-        }
-    }
-}
-
-
-.np-footer {
-
-    .np-footer__title {
-        font-weight: bold;
-        font-size: 2.25rem;
-        margin-bottom: 2rem;
-    }
-    
-    .np-footer__infos {
-        font-size: 1.5rem;
-    }
-    
-    .np-footer__nav > ul {
-        display: flex;
-    }
-
-    .np-footer__findme {
-        font-size: 1.25rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .np-footer__nav__item {
-        padding-right: 1rem;
-        font-weight: bold;
-    }
-
-    .np-footer__nav__item--github {
-        color: #24292d;
-
-        & a:hover {
-            border-bottom: 3px solid #24292d;
-        }
-    }
-
-    .np-footer__nav__item--linkedin {
-        color: #0b66c3;
-
-        & a:hover {
-            border-bottom: 3px solid #0b66c3;
-        }
-    }
-
-    .np-footer__nav__item--twitter {
-        color: #1da1f3;
-
-        & a:hover {
-            border-bottom: 3px solid #1da1f3;
-        }
-    }
-
-    .np-footer__nav__item--spotify {
-        color: #1dcf5d;
-
-        & a:hover {
-            border-bottom: 3px solid #1dcf5d;
-        }
-    }
-}
-
