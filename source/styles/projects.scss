@@ -1,17 +1,19 @@
-/* Container needed to position the overlay. Adjust the width as needed */
+.np-main__projects {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 .np-main__projects__container {
-    position: relative;
-    max-width: 350px;
+    position: relative; 
 }
   
-/* Make the image to responsive */
 .np-main__projects__image {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* The overlay effect - lays on top of the container and over the image */
 .np-main__projects__overlay {
     position: absolute;
     top: 0;
@@ -38,7 +40,6 @@
     }
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .np-main__projects__container:hover .np-main__projects__overlay {
     opacity: 1;
-}
+} 

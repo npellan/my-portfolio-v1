@@ -10,15 +10,6 @@
 </head>
 <body>
   <div class="np-container">
-    <svg class="np-svg np-svg1" width="659" height="583" viewBox="0 0 659 583" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="np-line np-line1" d="M651.5 -8.5V-8.5C565.715 76.9561 501.34 181.476 463.623 296.538L423.773 418.109C393.482 510.516 307.245 573 210 573V573H0" stroke="#F4F09F" stroke-opacity="0.8" stroke-width="20"/>
-    </svg>
-    <svg class="np-svg np-svg2" width="860" height="1970" viewBox="0 0 860 1970" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="np-line np-line2" d="M853 -14L776.362 54.9949C479.163 322.552 371.79 746.887 500.5 1125.5V1125.5L629.609 1464.14C714.848 1687.71 567.105 1931.82 329.5 1960V1960H0" stroke="#B3D4EC" stroke-opacity="0.8" stroke-width="20"/>
-    </svg>
-    <svg class="np-svg np-svg3" width="649" height="1099" viewBox="0 0 649 1099" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="np-line np-line3" d="M467 -5.5L464.653 54.9221C458.702 208.076 501.133 359.214 585.925 486.892V486.892C614 529.166 634.514 577.131 637.564 627.786C665.299 1088.5 151.302 1088.5 176 1088.5C184.944 1088.5 116.333 1089.17 1 1088.5" stroke="#D4EFE4" stroke-opacity="0.8" stroke-width="20"/>
-      </svg>      
     <header class="np-header">
       <div class="np-header__top">
         <p class="np-logo">np</p>
@@ -46,38 +37,39 @@
         <p class="np-main__section__text">Après 5 ans d’expérience en communication et webmarketing, je me suis reconverti dans le développement web par passion. Je développe des applications web fonctionnelles et esthétiques basées sur React et Node.js</p>
         <div class="button">
           <a class="button-text">En savoir plus</a>
-        </div>      </section>
+        </div>      
+      </section>
       <section class="np-main__section">
         <h2 class="np-main__section__title">Projets</h2>
         <div class="np-main__projects">
-          <a href="" class="np-main__projects__link">
-            <div class="np-main__projects__container">
+          <div class="np-main__projects__container">
+            <a href="" class="np-main__projects__link">
               <img class="np-main__projects__image" src="/images/atelier-bleu-piment.jpg">
               <div class="np-main__projects__overlay">
                 <p>
                   Atelier Bleu Piment
                 </p>
               </div>
-            </div>
-          </a>
-          <a href="" class="np-main__projects__link">
-            <div class="np-main__projects__container">
+            </a>
+          </div>
+          <div class="np-main__projects__container">
+            <a href="" class="np-main__projects__link">
               <img class="np-main__projects__image" src="/images/search-github.jpg">
               <div class="np-main__projects__overlay">  
                 <p>Search Github</p>
               </div>
-            </div>
-          </a>
-          <a href="" class="np-main__projects__link">
-            <div class="np-main__projects__container">
+            </a>
+          </div>
+          <div class="np-main__projects__container">
+            <a href="" class="np-main__projects__link">
               <img class="np-main__projects__image" src="/images/todo-list.jpg">
               <div class="np-main__projects__overlay">
                 <p>
                   Todo list
                 </p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div class="button">
           <a class="button-text">Plus de projets</a>
@@ -91,13 +83,61 @@
         <nav class="np-footer__nav">
           <p class="np-footer__findme">Retrouvez-moi sur</p>
           <ul>
-            <li class="np-footer__nav__item"><a href="#">Github</a></li>
-            <li class="np-footer__nav__item"><a href="#">LinkedIn</a></li>
-            <li class="np-footer__nav__item"><a href="#">Twitter</a></li>
-            <li class="np-footer__nav__item"><a href="#">Spotify</a></li>
+            <li class="np-footer__nav__item np-footer__nav__item--github"><a href="https://github.com/npellan">Github</a></li>
+            <li class="np-footer__nav__item np-footer__nav__item--linkedin"><a href="https://fr.linkedin.com/in/nicolas-pellan">LinkedIn</a></li>
+            <li class="np-footer__nav__item np-footer__nav__item--twitter"><a href="https://twitter.com/Nicolas_PELLAN">Twitter</a></li>
+            <li class="np-footer__nav__item np-footer__nav__item--spotify"><a href="https://open.spotify.com/user/nicolaspc?si=Gm96gHHsTw6eTh2Y-IhIcg">Spotify</a></li>
           </ul>
         </nav>
     </footer>
+    <svg class="np-svg np-svg1" width="659" height="583" viewBox="0 0 659 583" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="np-line np-line1" d="M651.5 -8.5V-8.5C565.715 76.9561 501.34 181.476 463.623 296.538L423.773 418.109C393.482 510.516 307.245 573 210 573V573H0" stroke="#F4F09F" stroke-opacity="0.8" stroke-width="20"/>
+      <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dropshadow" height="130%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+          <feOffset dx="2" dy="2" result="offsetblur"/>
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.2"/>
+          </feComponentTransfer>
+          <feMerge> 
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/> 
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+    <svg class="np-svg np-svg2" width="860" height="1970" viewBox="0 0 860 1970" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="np-line np-line2" d="M853 -14L776.362 54.9949C479.163 322.552 371.79 746.887 500.5 1125.5V1125.5L629.609 1464.14C714.848 1687.71 567.105 1931.82 329.5 1960V1960H0" stroke="#B3D4EC" stroke-opacity="0.8" stroke-width="20"/>
+      <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dropshadow" height="130%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+          <feOffset dx="2" dy="2" result="offsetblur"/>
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.2"/>
+          </feComponentTransfer>
+          <feMerge> 
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/> 
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+    <svg class="np-svg np-svg3" width="649" height="1099" viewBox="0 0 649 1099" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="np-line np-line3" d="M467 -5.5L464.653 54.9221C458.702 208.076 501.133 359.214 585.925 486.892V486.892C614 529.166 634.514 577.131 637.564 627.786C665.299 1088.5 151.302 1088.5 176 1088.5C184.944 1088.5 116.333 1089.17 1 1088.5" stroke="#D4EFE4" stroke-opacity="0.8" stroke-width="20"/>
+      <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dropshadow" height="130%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+          <feOffset dx="2" dy="2" result="offsetblur"/>
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.2"/>
+          </feComponentTransfer>
+          <feMerge> 
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/> 
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>      
   </div>
 </body>
 </html>

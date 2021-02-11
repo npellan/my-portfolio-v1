@@ -2,7 +2,7 @@
 @use 'vars';
 @use 'svg';
 @use 'button';
-@use 'overlay';
+@use 'projects';
 @use 'mediaqueries';
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap');
@@ -10,6 +10,7 @@
 body {
     font-family: vars.$primary-font;
     color: vars.$text-color;
+    background-color: vars.$background-color;
 }
 
 .np-container {
@@ -41,7 +42,7 @@ body {
         margin-left: 2rem;
 
         & a:hover {
-            border-bottom: 2px solid vars.$text-color;
+            border-bottom: 3px solid vars.$text-color;
         }
     }
     
@@ -95,12 +96,6 @@ body {
             transform: scale(1.5);
         }
     }
-    
-    .np-main__projects {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-    }
 }
 
 
@@ -128,9 +123,38 @@ body {
     
     .np-footer__nav__item {
         padding-right: 1rem;
+        font-weight: bold;
+    }
+
+    .np-footer__nav__item--github {
+        color: #24292d;
 
         & a:hover {
-            border-bottom: 2px solid vars.$text-color;
+            border-bottom: 3px solid #24292d;
+        }
+    }
+
+    .np-footer__nav__item--linkedin {
+        color: #0b66c3;
+
+        & a:hover {
+            border-bottom: 3px solid #0b66c3;
+        }
+    }
+
+    .np-footer__nav__item--twitter {
+        color: #1da1f3;
+
+        & a:hover {
+            border-bottom: 3px solid #1da1f3;
+        }
+    }
+
+    .np-footer__nav__item--spotify {
+        color: #1dcf5d;
+
+        & a:hover {
+            border-bottom: 3px solid #1dcf5d;
         }
     }
 }

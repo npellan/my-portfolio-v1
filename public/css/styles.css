@@ -168,6 +168,7 @@ button {
   top: 0;
   right: 200px;
   z-index: -1;
+  filter: url(#dropshadow);
 }
 
 .np-svg2 {
@@ -175,6 +176,7 @@ button {
   top: 0;
   right: 200px;
   z-index: -1;
+  filter: url(#dropshadow);
 }
 
 .np-svg3 {
@@ -182,33 +184,34 @@ button {
   top: 0;
   right: 200px;
   z-index: -1;
+  filter: url(#dropshadow);
 }
 
 .np-line1 {
   fill: none;
-  stroke: #CCC5B9;
-  stroke-width: 17px;
+  stroke: #3d7d83;
+  stroke-width: 10px;
   stroke-dasharray: 981.6414794922;
   stroke-dashoffset: 981.6414794922;
-  animation: move 3s linear forwards;
+  animation: move 2s linear forwards;
 }
 
 .np-line2 {
   fill: none;
-  stroke: #CCC5B9;
-  stroke-width: 17px;
+  stroke: #3d7d83;
+  stroke-width: 10px;
   stroke-dasharray: 2633.2145996094;
   stroke-dashoffset: 2633.2145996094;
-  animation: move 3s linear forwards;
+  animation: move 2s linear forwards;
 }
 
 .np-line3 {
   fill: none;
-  stroke: #CCC5B9;
-  stroke-width: 17px;
+  stroke: #3d7d83;
+  stroke-width: 10px;
   stroke-dasharray: 1583.5125732422;
   stroke-dashoffset: 1583.5125732422;
-  animation: move 3s linear forwards;
+  animation: move 2s linear forwards;
 }
 
 @keyframes move {
@@ -217,7 +220,7 @@ button {
   }
 }
 .button {
-  background-color: #EB5E28;
+  background-color: #7e9ea0;
   width: 175px;
   height: 17px;
   display: flex;
@@ -225,7 +228,7 @@ button {
   position: relative;
   cursor: pointer;
   margin-top: 3rem;
-  transition: width 1s;
+  transition: width 0.5s;
 }
 .button:hover {
   width: 250px;
@@ -240,20 +243,22 @@ button {
   text-transform: uppercase;
 }
 
-/* Container needed to position the overlay. Adjust the width as needed */
-.np-main__projects__container {
-  position: relative;
-  max-width: 350px;
+.np-main__projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
-/* Make the image to responsive */
+.np-main__projects__container {
+  position: relative;
+}
+
 .np-main__projects__image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* The overlay effect - lays on top of the container and over the image */
 .np-main__projects__overlay {
   position: absolute;
   top: 0;
@@ -279,32 +284,24 @@ button {
   margin: 0;
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .np-main__projects__container:hover .np-main__projects__overlay {
   opacity: 1;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1024px) {
   .np-main__projects {
-    flex-wrap: wrap;
-  }
-
-  .np-main__projects__container {
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
   .np-main__projects {
-    flex-wrap: wrap;
-  }
-
-  .np-main__projects__container {
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 body {
   font-family: "Raleway", sans-serif;
-  color: #353531;
+  color: #28484a;
+  background-color: white;
 }
 
 .np-container {
@@ -331,7 +328,7 @@ body {
   margin-left: 2rem;
 }
 .np-header .np-nav__item a:hover {
-  border-bottom: 2px solid #353531;
+  border-bottom: 3px solid #28484a;
 }
 .np-header .np-header__hero {
   margin-bottom: 7rem;
@@ -374,11 +371,6 @@ body {
 .np-main__section .np-main__section__button:hover {
   transform: scale(1.5);
 }
-.np-main__section .np-main__projects {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
 
 .np-footer .np-footer__title {
   font-weight: bold;
@@ -398,9 +390,31 @@ body {
 }
 .np-footer .np-footer__nav__item {
   padding-right: 1rem;
+  font-weight: bold;
 }
-.np-footer .np-footer__nav__item a:hover {
-  border-bottom: 2px solid #353531;
+.np-footer .np-footer__nav__item--github {
+  color: #24292d;
+}
+.np-footer .np-footer__nav__item--github a:hover {
+  border-bottom: 3px solid #24292d;
+}
+.np-footer .np-footer__nav__item--linkedin {
+  color: #0b66c3;
+}
+.np-footer .np-footer__nav__item--linkedin a:hover {
+  border-bottom: 3px solid #0b66c3;
+}
+.np-footer .np-footer__nav__item--twitter {
+  color: #1da1f3;
+}
+.np-footer .np-footer__nav__item--twitter a:hover {
+  border-bottom: 3px solid #1da1f3;
+}
+.np-footer .np-footer__nav__item--spotify {
+  color: #1dcf5d;
+}
+.np-footer .np-footer__nav__item--spotify a:hover {
+  border-bottom: 3px solid #1dcf5d;
 }
 
 /*# sourceMappingURL=styles.css.map */
