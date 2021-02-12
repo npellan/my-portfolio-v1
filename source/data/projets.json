@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "slug": "atelier-bleu-piment",
+        "name": "Atelier Bleu Piment",
+        "year": 2020,
+        "tags": ["HTML", "CSS", "JS"],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit."
+    }
+]
