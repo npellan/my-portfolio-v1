@@ -5,6 +5,43 @@
         "name": "Atelier Bleu Piment",
         "year": 2020,
         "tags": ["HTML", "CSS", "JS"],
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
+        "github": null
+    },
+    {
+        "id": 2,
+        "slug": "chatroom-react",
+        "name": "Chatroom React",
+        "year": 2021,
+        "tags": ["React", "Redux", "Socket.io"],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
+        "github": "https://github.com/npellan/chatroom-react-redux-socketio"
+    },
+    {
+        "id": 3,
+        "slug": "search-github-api-react",
+        "name": "Search Github API React",
+        "year": 2021,
+        "tags": ["React", "API"],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
+        "github": "https://github.com/npellan/search-github-api"
+    },
+    {
+        "id": 4,
+        "slug": "todo-list-react",
+        "name": "Todo List React",
+        "year": 2021,
+        "tags": ["React"],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
+        "github": "https://github.com/npellan/todo-list-in-react"
+    },
+    {
+        "id": 5,
+        "slug": "euro-converter-react",
+        "name": "Euro converter React",
+        "year": 2021,
+        "tags": ["React"],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
+        "github": "https://github.com/npellan/euro-converter-in-react"
     }
 ]

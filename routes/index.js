@@ -12,13 +12,13 @@ router.get('/projets', (req, res, next) => {
   res.render('projets', { title: 'Projets | Nicolas Pellan - Développeur web' });
 });
 
-router.get('/projets/:id', (req, res, next) => {
-  const projetId = parseInt(req.params.id, 10);
+router.get('/projets/:slug', (req, res, next) => {
+  const projetSlug = req.params.slug;
 
   const projet = projets.find(
-    (elem) => elem.id === projetId,
+    (elem) => elem.slug === projetSlug,
   );
-  res.render('projet', { title: 'Projets | Nicolas Pellan - Développeur web', projet });
+  res.render('projet', { title: `${projet.name} | Nicolas Pellan - Développeur web`, projet });
 });
 
 router.get('/a-propos', (req, res, next) => {
