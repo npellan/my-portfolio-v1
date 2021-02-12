@@ -351,6 +351,12 @@ button {
   text-transform: uppercase;
 }
 
+button.button-text {
+  -webkit-appearance: none;
+  border: 0;
+  background-color: unset;
+}
+
 .np-main__projects {
   display: grid;
   grid-gap: 1rem;
@@ -394,6 +400,49 @@ button {
 
 .np-main__projects__container:hover .np-main__projects__overlay {
   opacity: 1;
+}
+
+.np-form__input {
+  margin-bottom: 1rem;
+}
+.np-form__input > label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.np-form__input > input, .np-form__input textarea {
+  color: #28484a;
+  border: 1px solid #28484a;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: white;
+  -webkit-appearance: none;
+  text-rendering: unset;
+}
+
+.np-form__submit {
+  background-color: #7e9ea0;
+  width: 175px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: width 0.5s;
+}
+.np-form__submit:hover {
+  width: 250px;
+}
+.np-form__submit > input {
+  position: absolute;
+  top: -10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: unset;
+  color: #28484a;
 }
 
 @media screen and (min-width: 1024px) {

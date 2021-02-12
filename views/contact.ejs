@@ -1,12 +1,28 @@
 <% include partials/header %> 
       <div class="np-header__hero">
-        <h1 class="np-header__hero__title">Contact</h1>
+        <h1 class="np-header__hero__title">Entrons en contact</h1>
         <p class="np-header__hero__subtitle">-</p>
       </div>
     </header>
     <main class="np-main">
       <section class="np-main__section">
-        <h2 class="np-main__section__title">Contact</h2>
+        <form action="" method="get" class="np-form">
+          <div class="np-form__input">
+            <label for="name">Nom et prénom</label>
+            <input type="text" name="name" id="name" placeholder="Entrez votre nom et prénom" required>
+          </div>
+          <div class="np-form__input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Entrez votre email" required>
+          </div>
+          <div class="np-form__input">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Entrez votre message" rows="5" cols="33" required></textarea>
+          </div>
+          <div class="button">
+            <button type="submit" class="button-text">Envoyer</button>
+          </div>
+        </form>
       </section>
     </main>
 <% include partials/footer %> 

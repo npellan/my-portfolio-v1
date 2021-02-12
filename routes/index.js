@@ -16,7 +16,7 @@ router.get('/a-propos', (req, res, next) => {
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('contact', { title: 'A propos | Nicolas Pellan - Développeur web' });
+  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web' });
 });
 
 module.exports = router;

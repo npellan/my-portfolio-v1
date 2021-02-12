@@ -1,0 +1,20 @@
+@use 'vars';
+
+.np-form__input {
+    margin-bottom: 1rem;
+
+    & > label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    & > input, textarea {
+        color: vars.$text-color;
+        border: 1px solid vars.$text-color;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: vars.$background-color;
+        -webkit-appearance: none;
+        text-rendering: unset;
+    }
+}
