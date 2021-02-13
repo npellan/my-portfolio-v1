@@ -1,9 +1,9 @@
 // TODO
 
-- annuler overlay et mettre en dur les titres des projets, puis simple changement opacité sur hover en desktop
+DONE - annuler overlay et mettre en dur les titres des projets, puis simple changement opacité sur hover en desktop
 - rajouter un fil d'Ariane
-- Page "détail de projet" : année, durée de travail, description, langages
-- Page "A propos"
+DONE - Page "détail de projet" : année, durée de travail, description, langages
+DONE - Page "A propos"
 - Page "contact" : Envoi d'un email
 
 - lignes à refaire
@@ -11,5 +11,5 @@
 
 // QUESTIONS
 
-- nombre de projets en page d'accueil ?
-- menu mobile ?
+DONE - nombre de projets en page d'accueil ?
+DONE - menu mobile ?

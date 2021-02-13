@@ -455,6 +455,85 @@ button.button-text {
   text-rendering: unset;
 }
 
+.np-apropos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 3rem 0 3rem 0;
+  grid-gap: 3rem;
+}
+
+.np-apropos__title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.np-apropos__text {
+  line-height: 1.5;
+  width: 80%;
+}
+
+.np-apropos__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.np-cv {
+  margin-bottom: 7rem;
+}
+
+.np-cv__skills {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.np-cv__subtitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.np-cv__column-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.np-cv__column-skills > div p {
+  line-height: 1.5;
+}
+
+.np-cv__exp {
+  margin-bottom: 3rem;
+}
+
+.np-cv__exp__one {
+  margin-bottom: 2rem;
+}
+
+.np-cv__exp__title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.np-cv__exp__subtitle {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.np-cv__exp__year {
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.np-cv__exp__desc {
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 480px) {
   .np-header .np-header__top {
     display: block;
@@ -477,6 +556,19 @@ button.button-text {
 
   .np-projet--right {
     text-align: left;
+  }
+
+  .np-apropos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .np-cv__skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .np-cv__column-skills {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
