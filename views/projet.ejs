@@ -2,16 +2,36 @@
     </header>
     <main class="np-main">
       <img class="np-main__projects__image" src="/images/<%= projet.slug %>.jpg">
-      <section class="np-main__section__projet">
-        <div>
-          <h1><%= projet.name %></h1>
-          <p><%= projet.description %></p>
+      <section class="np-projet">
+        <div class="np-projet--left">
+          <h1 class="np-projet__title"><%= projet.name %></h1>
+          <p class="np-projet__desc"><%= projet.description %></p>
+          <% if ((projet.github) !== null) { %>
+            <div class="button">
+              <a href="<%= projet.github %>" class="button-text">Lien Github</a>
+            </div>
+            <% } else { %>
+            <% } %>
         </div>
-        <div>
-          <p>Durée du projet</p>
-          <p>Equipe</p>
-          <p>Rôle</p>
-          <p>Technos</p>
+        <div class="np-projet--right">
+          <h2 class="np-projet__subtitle">Technos</h2>
+          <p class="np-projet__infos">
+            <% for (let tag of projet.tags) { %>
+              <%= tag %>.
+            <% } %>
+          </p>
+          <h2 class="np-projet__subtitle">Durée du projet</h2>
+          <p class="np-projet__infos"><%= projet.duration %></p>
+          <h2 class="np-projet__subtitle">Rôle</h2>
+          <p class="np-projet__infos"><%= projet.role %></p>
+          <h2 class="np-projet__subtitle">Equipe</h2>
+          <p class="np-projet__infos">
+            <% if ((projet.team) !== null) { %>
+            <%= projet.team %>
+            <% } else { %>
+            -
+            <% } %>
+          </p>          
         </div>
       </section>
     </main>

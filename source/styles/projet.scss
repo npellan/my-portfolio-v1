@@ -1,4 +1,29 @@
-.np-main__section__projet {
+.np-projet {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin: 3rem 0 7rem 0;
+    grid-gap: 3rem;
+}
+
+.np-projet__title {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.np-projet__desc {
+    line-height: 1.5;
+}
+
+.np-projet__subtitle {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.np-projet__infos {
+    margin-bottom: 1rem;
+}
+
+.np-projet--right {
+    text-align: right;
 }

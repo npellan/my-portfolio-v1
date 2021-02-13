@@ -5,6 +5,9 @@
         "name": "Atelier Bleu Piment",
         "year": 2020,
         "tags": ["HTML", "CSS", "JS"],
+        "duration": "1 semaine",
+        "role" : "Chef de projet et développeur front",
+        "team": ["Ariane Francescato, cliente, graphisme"],
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
         "github": null
     },
@@ -14,6 +17,9 @@
         "name": "Chatroom React",
         "year": 2021,
         "tags": ["React", "Redux", "Socket.io"],
+        "duration": "3 jours",
+        "role" : "Développeur React",
+        "team": null,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
         "github": "https://github.com/npellan/chatroom-react-redux-socketio"
     },
@@ -23,6 +29,9 @@
         "name": "Search Github API React",
         "year": 2021,
         "tags": ["React", "API"],
+        "duration": "1 jour",
+        "role" : "Développeur React",
+        "team": null,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
         "github": "https://github.com/npellan/search-github-api"
     },
@@ -32,6 +41,9 @@
         "name": "Todo List React",
         "year": 2021,
         "tags": ["React"],
+        "duration": "2 jours",
+        "role" : "Développeur React",
+        "team": null,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
         "github": "https://github.com/npellan/todo-list-in-react"
     },
@@ -41,6 +53,9 @@
         "name": "Euro converter React",
         "year": 2021,
         "tags": ["React"],
+        "duration": "2 jours",
+        "role" : "Développeur React",
+        "team": null,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
         "github": "https://github.com/npellan/euro-converter-in-react"
     }
