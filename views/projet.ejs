@@ -1,11 +1,18 @@
 <% include partials/header %> 
-      <div class="np-header__hero">
-        <h1 class="np-header__hero__title"><%= projet.name %></h1>
-      </div>
     </header>
     <main class="np-main">
-      <section class="np-main__section">
-        
+      <img class="np-main__projects__image" src="/images/<%= projet.slug %>.jpg">
+      <section class="np-main__section__projet">
+        <div>
+          <h1><%= projet.name %></h1>
+          <p><%= projet.description %></p>
+        </div>
+        <div>
+          <p>Durée du projet</p>
+          <p>Equipe</p>
+          <p>Rôle</p>
+          <p>Technos</p>
+        </div>
       </section>
     </main>
 <% include partials/footer %> 

@@ -297,25 +297,27 @@ button {
 
 .np-line {
   fill: none;
-  opacity: 0.7;
   stroke-width: 20px;
   animation: move 2s linear forwards;
 }
 
 .np-line1 {
-  stroke: #706FD3;
+  stroke: #9AECDB;
+  opacity: 0.5;
   stroke-dasharray: 981.6414794922;
   stroke-dashoffset: 981.6414794922;
 }
 
 .np-line2 {
-  stroke: #9AECDB;
+  stroke: #218C74;
+  opacity: 0.3;
   stroke-dasharray: 2633.2145996094;
   stroke-dashoffset: 2633.2145996094;
 }
 
 .np-line3 {
-  stroke: #BDC581;
+  stroke: #706FD3;
+  opacity: 0.7;
   stroke-dasharray: 1583.5125732422;
   stroke-dashoffset: 1583.5125732422;
 }
@@ -333,8 +335,8 @@ button {
   align-items: center;
   position: relative;
   cursor: pointer;
-  margin-top: 2rem;
-  transition: width 0.5s;
+  margin-top: 3rem;
+  transition: width 0.2s;
 }
 .button:hover {
   width: 250px;
@@ -358,11 +360,11 @@ button.button-text {
 
 .np-main__projects {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
 }
 
-.np-main__projects__container {
+.np-main__projects__wrapper {
   position: relative;
 }
 
@@ -381,24 +383,31 @@ button.button-text {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.np-main__projects__overlay > p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0;
+  transition: 0.2s ease-in-out;
+  background-color: black;
 }
 
-.np-main__projects__container:hover .np-main__projects__overlay {
-  opacity: 1;
+.np-main__projects__wrapper:hover .np-main__projects__overlay {
+  opacity: 0.25;
+}
+
+.np-main__projects__title {
+  margin-top: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.np-main__projects__tags {
+  margin-top: 0.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.np-main__section__projet {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .np-form__input {
