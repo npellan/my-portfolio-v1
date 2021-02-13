@@ -5,7 +5,7 @@
     top: 0;
     right: 200px;
     z-index: -1;
-    filter: url(#dropshadow);
+    /*filter: url(#dropshadow);*/
 }
 
 .np-svg2 {
@@ -13,7 +13,7 @@
     top: 0;
     right: 200px;
     z-index: -1;
-    filter: url(#dropshadow);
+    /*filter: url(#dropshadow);*/
 }
 
 .np-svg3 {
@@ -21,34 +21,32 @@
     top: 0;
     right: 200px;
     z-index: -1;
-    filter: url(#dropshadow);
+    /*filter: url(#dropshadow);*/
+}
+
+.np-line {
+    fill: none;
+    opacity: 0.7;
+    stroke-width: 20px;
+    animation: move 2s linear forwards;
 }
 
 .np-line1 {
-    fill: none;
-    stroke: vars.$line-color;
-    stroke-width: 10px;
+    stroke: vars.$line1-color;
     stroke-dasharray: 981.6414794921875; 
     stroke-dashoffset: 981.6414794921875;
-    animation: move 2s linear forwards;
 }
 
 .np-line2 {
-    fill: none;
-    stroke: vars.$line-color;
-    stroke-width: 10px;
+    stroke: vars.$line2-color;
     stroke-dasharray: 2633.214599609375; 
     stroke-dashoffset: 2633.214599609375;
-    animation: move 2s linear forwards;
 }
 
 .np-line3 {
-    fill: none;
-    stroke: vars.$line-color;
-    stroke-width: 10px;
+    stroke: vars.$line3-color;
     stroke-dasharray: 1583.5125732421875; 
     stroke-dashoffset: 1583.5125732421875;
-    animation: move 2s linear forwards;
 }
 
 @keyframes move {

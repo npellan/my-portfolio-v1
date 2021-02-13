@@ -182,7 +182,7 @@ button {
   font-size: 1.2rem;
 }
 .np-header .np-nav__item a:hover {
-  border-bottom: 3px solid #28484a;
+  border-bottom: 3px solid #2C2C54;
 }
 .np-header .np-header__hero {
   margin-bottom: 7rem;
@@ -276,7 +276,7 @@ button {
   top: 0;
   right: 200px;
   z-index: -1;
-  filter: url(#dropshadow);
+  /*filter: url(#dropshadow);*/
 }
 
 .np-svg2 {
@@ -284,7 +284,7 @@ button {
   top: 0;
   right: 200px;
   z-index: -1;
-  filter: url(#dropshadow);
+  /*filter: url(#dropshadow);*/
 }
 
 .np-svg3 {
@@ -292,34 +292,32 @@ button {
   top: 0;
   right: 200px;
   z-index: -1;
-  filter: url(#dropshadow);
+  /*filter: url(#dropshadow);*/
+}
+
+.np-line {
+  fill: none;
+  opacity: 0.7;
+  stroke-width: 20px;
+  animation: move 2s linear forwards;
 }
 
 .np-line1 {
-  fill: none;
-  stroke: #3d7d83;
-  stroke-width: 10px;
+  stroke: #706FD3;
   stroke-dasharray: 981.6414794922;
   stroke-dashoffset: 981.6414794922;
-  animation: move 2s linear forwards;
 }
 
 .np-line2 {
-  fill: none;
-  stroke: #3d7d83;
-  stroke-width: 10px;
+  stroke: #9AECDB;
   stroke-dasharray: 2633.2145996094;
   stroke-dashoffset: 2633.2145996094;
-  animation: move 2s linear forwards;
 }
 
 .np-line3 {
-  fill: none;
-  stroke: #3d7d83;
-  stroke-width: 10px;
+  stroke: #BDC581;
   stroke-dasharray: 1583.5125732422;
   stroke-dashoffset: 1583.5125732422;
-  animation: move 2s linear forwards;
 }
 
 @keyframes move {
@@ -328,9 +326,9 @@ button {
   }
 }
 .button {
-  background-color: #7e9ea0;
+  background-color: #EAB543;
   width: 175px;
-  height: 17px;
+  height: 20px;
   display: flex;
   align-items: center;
   position: relative;
@@ -355,7 +353,7 @@ button.button-text {
   -webkit-appearance: none;
   border: 0;
   background-color: unset;
-  color: #28484a;
+  color: #2C2C54;
 }
 
 .np-main__projects {
@@ -411,8 +409,8 @@ button.button-text {
   margin-bottom: 0.5rem;
 }
 .np-form__input > input, .np-form__input textarea {
-  color: #28484a;
-  border: 1px solid #28484a;
+  color: #2C2C54;
+  border: 1px solid #2C2C54;
   border-radius: 5px;
   padding: 1rem;
   background-color: white;
@@ -447,7 +445,7 @@ button.button-text {
 }
 body {
   font-family: "Raleway", sans-serif;
-  color: #28484a;
+  color: #2C2C54;
   background-color: white;
 }
 
