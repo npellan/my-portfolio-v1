@@ -6,7 +6,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 7rem;
     }
     
     .np-logo {
@@ -28,20 +27,20 @@
         }
     }
     
-    .np-header__hero {
-        margin-bottom: 7rem;
+    .np-hero {
+        margin: 7rem 0;
     }
 
-    .np-header__hero__hi {
+    .np-hero__hi {
         margin-bottom: 1rem;
     }
     
-    .np-header__hero__title {
+    .np-hero__title {
         font-weight: bold;
         font-size: 4rem;
     }
     
-    .np-header__hero__subtitle {
+    .np-hero__subtitle {
         font-size: 2rem;
         margin-bottom: 2rem;
     }

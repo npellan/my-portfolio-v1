@@ -1,9 +1,16 @@
 <% include partials/header %> 
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li class="breadcrumb__li"><a href="/">np</a></li>
+          <li class="breadcrumb__li"><a href="/projets">Projets</a></li>
+          <li class="breadcrumb__li breadcrumb__li--current"><span aria-current="page" ><%= projet.name %></span></li>
+        </ul>
+      </nav>
     </header>
-    <main class="np-main">
-      <img class="np-main__projects__image" src="/images/<%= projet.slug %>.jpg">
+    <main class="np-main np-main--projet">
+      <img class="np-projects__image" src="/images/<%= projet.slug %>.jpg">
       <section class="np-projet">
-        <div class="np-projet--left">
+        <div>
           <h1 class="np-projet__title"><%= projet.name %></h1>
           <p class="np-projet__desc"><%= projet.description %></p>
           <% if ((projet.github) !== null) { %>
@@ -13,7 +20,7 @@
             <% } else { %>
             <% } %>
         </div>
-        <div class="np-projet--right">
+        <div>
           <h2 class="np-projet__subtitle">Technos</h2>
           <p class="np-projet__infos">
             <% for (let tag of projet.tags) { %>

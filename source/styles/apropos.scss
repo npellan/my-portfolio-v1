@@ -15,7 +15,14 @@
 
 .np-apropos__text {
     line-height: 1.5;
-    width: 80%;
+    margin-bottom: .7rem;
+    text-align: justify;
+}
+
+.np-apropos__text--bigger {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
 }
 
 .np-apropos__img {

@@ -1,8 +1,8 @@
 <% include partials/header %> 
-      <div class="np-header__hero">
-        <p class="np-header__hero__hi">Bonjour je suis</p>
-        <h1 class="np-header__hero__title">Nicolas Pellan</h1>
-        <p class="np-header__hero__subtitle">Développeur fullstack Javascript</p>
+      <div class="np-hero">
+        <p class="np-hero__hi">Bonjour je suis</p>
+        <h1 class="np-hero__title">Nicolas Pellan</h1>
+        <p class="np-hero__subtitle">Développeur fullstack Javascript</p>
         <div class="button">
           <a href="/pdf/cv-nicolas-pellan.pdf" class="button-text">Voir mon CV</a>
         </div>
@@ -12,114 +12,75 @@
       </div>
     </header>
     <main class="np-main">
-      <section class="np-main__section">
-        <h2 class="np-main__section__title">A propos</h2>
-        <h3 class="np-main__section__subtitle">Développeur web reconverti par passion, mélomane et grand lecteur</h2>
-        <p class="np-main__section__text">Après 5 ans d’expérience en communication et webmarketing, je me suis reconverti dans le développement web par passion. Je développe des applications web fonctionnelles et esthétiques basées sur React et Node.js</p>
+      <section class="np-section ">
+        <h2 class="np-section__title">A propos</h2>
+        <h3 class="np-section__subtitle">Je suis un développeur web reconverti par passion, mélomane et grand lecteur</h2>
+        <p class="np-section__text">Après 5 ans d’expériences en communication et webmarketing, je me suis reconverti dans le développement web par passion. Je développe des applications web fonctionnelles et esthétiques basées sur React et Node.js.</p>
         <div class="button">
           <a href="/a-propos" class="button-text">En savoir plus</a>
         </div>      
       </section>
-      <section class="np-main__section">
-        <h2 class="np-main__section__title">Projets</h2>
-        <div class="np-main__projects">
-          <div class="np-main__projects__container">
-            <div class="np-main__projects__wrapper">
-              <a href="/projets/atelier-bleu-piment" class="np-main__projects__link">
-                <img class="np-main__projects__image" src="/images/atelier-bleu-piment.jpg">
-                <div class="np-main__projects__overlay"></div>
+      <section class="np-section ">
+        <h2 class="np-section__title">Projets</h2>
+        <div class="np-projects">
+          <div class="np-projects__container">
+            <div class="np-projects__wrapper">
+              <a href="/projets/atelier-bleu-piment" class="np-projects__link">
+                <img class="np-projects__image" src="/images/atelier-bleu-piment.jpg">
+                <div class="np-projects__overlay"></div>
               </a>
             </div>
-            <p class="np-main__projects__title">
+            <p class="np-projects__title">
               Atelier Bleu Piment
             </p>
-            <p class="np-main__projects__tags">
+            <p class="np-projects__tags">
               HTML, CSS, JS
             </p>
           </div>
-          <div class="np-main__projects__container">
-            <div class="np-main__projects__wrapper">
-              <a href="/projets/chatroom-react" class="np-main__projects__link">
-                <img class="np-main__projects__image" src="/images/chatroom-react.jpg">
-                <div class="np-main__projects__overlay"></div>
+          <div class="np-projects__container">
+            <div class="np-projects__wrapper">
+              <a href="/projets/chatroom-react" class="np-projects__link">
+                <img class="np-projects__image" src="/images/chatroom-react.jpg">
+                <div class="np-projects__overlay"></div>
               </a>
             </div>
-            <p class="np-main__projects__title">
+            <p class="np-projects__title">
               Chatroom
             </p>
-            <p class="np-main__projects__tags">
+            <p class="np-projects__tags">
               React, Redux, Socket.io
             </p>
           </div>
-          <div class="np-main__projects__container">
-            <div class="np-main__projects__wrapper">
-              <a href="/projets/todo-list-react" class="np-main__projects__link">
-                <img class="np-main__projects__image" src="/images/todo-list-react.jpg">
-                <div class="np-main__projects__overlay"></div>
+          <div class="np-projects__container">
+            <div class="np-projects__wrapper">
+              <a href="/projets/todo-list-react" class="np-projects__link">
+                <img class="np-projects__image" src="/images/todo-list-react.jpg">
+                <div class="np-projects__overlay"></div>
               </a>
             </div>
-            <p class="np-main__projects__title">
+            <p class="np-projects__title">
               Todo list
             </p>
-            <p class="np-main__projects__tags">
+            <p class="np-projects__tags">
               React, SCSS
             </p>
           </div>
         </div>
         <div class="button">
-          <a href="/projets" class="button-text">Plus de projets</a>
+          <a href="/projets" class="button-text -4">Plus de projets</a>
         </div>
       </section>
     </main>
 <% include partials/footer %> 
-    <svg class="np-svg np-svg1" width="659" height="583" viewBox="0 0 659 583" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="np-line np-line1" d="M651.5 -8.5V-8.5C565.715 76.9561 501.34 181.476 463.623 296.538L423.773 418.109C393.482 510.516 307.245 573 210 573V573H0" stroke="#F4F09F" stroke-opacity="0.8" stroke-width="20"/>
-      <defs xmlns="http://www.w3.org/2000/svg">
-        <filter id="dropshadow" height="130%">
-          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
-          <feOffset dx="2" dy="2" result="offsetblur"/>
-          <feComponentTransfer>
-            <feFuncA type="linear" slope="0.2"/>
-          </feComponentTransfer>
-          <feMerge> 
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/> 
-          </feMerge>
-        </filter>
-      </defs>
+    <svg class="np-svg np-svg1" width="994" height="1909" viewBox="0 0 994 1909" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="np-line np-line1" d="M987 -2L831.468 146.137C744.336 229.127 691.997 342.126 685.048 462.255V462.255C676.217 614.918 612.379 759.213 505.351 868.433L249.468 1129.56C48.2145 1334.93 -33.1756 1629.42 34.0509 1909V1909" stroke="#9AECDB" stroke-opacity="0.5" stroke-width="20"/>
+    </svg>    
+    <svg class="np-svg np-svg2" width="422" height="1909" viewBox="0 0 422 1909" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="np-line np-line2" d="M413 -15.6305L242.668 231.799C147.782 369.633 120.903 543.202 169.652 703.279L275.36 1050.39C373.473 1372.56 267.501 1722.09 7 1935.54V1935.54" stroke="#218C74" stroke-opacity="0.3" stroke-width="20"/>
     </svg>
-    <svg class="np-svg np-svg2" width="860" height="1970" viewBox="0 0 860 1970" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="np-line np-line2" d="M853 -14L776.362 54.9949C479.163 322.552 371.79 746.887 500.5 1125.5V1125.5L629.609 1464.14C714.848 1687.71 567.105 1931.82 329.5 1960V1960H0" stroke="#B3D4EC" stroke-opacity="0.8" stroke-width="20"/>
-      <defs xmlns="http://www.w3.org/2000/svg">
-        <filter id="dropshadow" height="130%">
-          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
-          <feOffset dx="2" dy="2" result="offsetblur"/>
-          <feComponentTransfer>
-            <feFuncA type="linear" slope="0.2"/>
-          </feComponentTransfer>
-          <feMerge> 
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/> 
-          </feMerge>
-        </filter>
-      </defs>
-    </svg>
-    <svg class="np-svg np-svg3" width="649" height="1099" viewBox="0 0 649 1099" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="np-line np-line3" d="M467 -5.5L464.653 54.9221C458.702 208.076 501.133 359.214 585.925 486.892V486.892C614 529.166 634.514 577.131 637.564 627.786C665.299 1088.5 151.302 1088.5 176 1088.5C184.944 1088.5 116.333 1089.17 1 1088.5" stroke="#D4EFE4" stroke-opacity="0.8" stroke-width="20"/>
-      <defs xmlns="http://www.w3.org/2000/svg">
-        <filter id="dropshadow" height="130%">
-          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
-          <feOffset dx="2" dy="2" result="offsetblur"/>
-          <feComponentTransfer>
-            <feFuncA type="linear" slope="0.2"/>
-          </feComponentTransfer>
-          <feMerge> 
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/> 
-          </feMerge>
-        </filter>
-      </defs>
-    </svg>      
+    <svg class="np-svg np-svg3" width="602" height="1909" viewBox="0 0 602 1909" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="np-line np-line3" d="M403.5 -33.5V-33.5C364.95 173.706 406.648 387.819 520.137 565.416L540 596.5V596.5C824.748 1011.63 -179.106 1359 42.5 1811V1811L97.5 1930.5" stroke="#706FD3" stroke-opacity="0.7" stroke-width="20"/>
+    </svg>          
   </div>
 </body>
 </html>

@@ -1,54 +1,37 @@
 @use 'vars';
 
-.np-svg1 {
+.np-svg {
     position: absolute;
     top: 0;
     right: 200px;
     z-index: -1;
-    /*filter: url(#dropshadow);*/
-}
-
-.np-svg2 {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: -1;
-    /*filter: url(#dropshadow);*/
-}
-
-.np-svg3 {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: -1;
-    /*filter: url(#dropshadow);*/
 }
 
 .np-line {
     fill: none;
-    stroke-width: 20px;
+    stroke-width: 18px;
     animation: move 2s linear forwards;
 }
 
 .np-line1 {
     stroke: vars.$line1-color;
     opacity: 0.5;
-    stroke-dasharray: 981.6414794921875; 
-    stroke-dashoffset: 981.6414794921875;
+    stroke-dasharray: 2235.124267578125; 
+    stroke-dashoffset: 2235.124267578125;
 }
 
 .np-line2 {
     stroke: vars.$line2-color;
     opacity: 0.3;
-    stroke-dasharray: 2633.214599609375; 
-    stroke-dashoffset: 2633.214599609375;
+    stroke-dasharray: 2137.661376953125; 
+    stroke-dashoffset: 2137.661376953125;
 }
 
 .np-line3 {
     stroke: vars.$line3-color;
     opacity: 0.7;
-    stroke-dasharray: 1583.5125732421875; 
-    stroke-dashoffset: 1583.5125732421875;
+    stroke-dasharray: 2216.4765625; 
+    stroke-dashoffset: 2216.4765625;
 }
 
 @keyframes move {

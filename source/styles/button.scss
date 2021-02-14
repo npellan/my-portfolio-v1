@@ -3,7 +3,7 @@
 .button {
     background-color: vars.$button-color;
     width: 175px;
-    height: 20px;
+    height: 18px;
     display: flex;
     align-items: center;
     position: relative;
@@ -31,3 +31,20 @@ button.button-text {
     background-color: unset;
     color: vars.$text-color;
 }    
+
+footer > .material-icons {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 50px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 36px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .3s ease-in-out
+}
+
+footer > .material-icons.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,22 +1,22 @@
 @use 'vars';
 
-.np-main__projects {
+.np-projects {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
 }
 
-.np-main__projects__wrapper {
+.np-projects__wrapper {
     position: relative;
 }
 
-.np-main__projects__image {
+.np-projects__image {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.np-main__projects__overlay {
+.np-projects__overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -29,11 +29,11 @@
     background-color: black;
 }
 
-.np-main__projects__wrapper:hover .np-main__projects__overlay {
+.np-projects__wrapper:hover .np-projects__overlay {
     opacity: 0.25;
 }
 
-.np-main__projects__title {
+.np-projects__title {
     margin-top: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -41,7 +41,7 @@
     line-height: 1.5;
 }
 
-.np-main__projects__tags {
+.np-projects__tags {
     margin-top: .5rem;
     font-style: italic;
     line-height: 1.5;

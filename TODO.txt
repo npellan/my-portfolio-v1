@@ -1,13 +1,13 @@
 // TODO
 
 DONE - annuler overlay et mettre en dur les titres des projets, puis simple changement opacité sur hover en desktop
-- rajouter un fil d'Ariane
+DONE - rajouter un fil d'Ariane
 DONE - Page "détail de projet" : année, durée de travail, description, langages
 DONE - Page "A propos"
-- Page "contact" : Envoi d'un email
+ABORT - Page "contact" : Envoi d'un email
 
 - lignes à refaire
-- couleurs à choisir
+DONE - couleurs à choisir
 
 // QUESTIONS
 

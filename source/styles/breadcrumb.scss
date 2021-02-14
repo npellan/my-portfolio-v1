@@ -1,0 +1,32 @@
+@use 'vars';
+
+.breadcrumb {
+    margin-top: 2rem;
+}
+
+.breadcrumb > ul {
+    display: flex;
+
+    & > .breadcrumb__li {
+        margin-right: .5rem;
+
+        &::after {
+            padding-left: .5rem;
+            content: ">"
+        }
+    }
+
+    & a:hover {
+        border-bottom: 3px solid vars.$text-color;
+    }
+}
+
+.breadcrumb > ul > .breadcrumb__li.breadcrumb__li--current::after {
+    content:"";
+    padding-left: 0;
+}
+
+.breadcrumb__li--current {
+    border-bottom: 3px solid vars.$text-color;
+}
+

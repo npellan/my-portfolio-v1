@@ -1,3 +1,7 @@
+.np-main--projet {
+    margin-top: 7rem;
+}
+
 .np-projet {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -18,12 +22,9 @@
 .np-projet__subtitle {
     font-weight: 700;
     font-size: 1.2rem;
+    margin-bottom: .5rem;
 }
 
 .np-projet__infos {
     margin-bottom: 1rem;
-}
-
-.np-projet--right {
-    text-align: right;
 }
