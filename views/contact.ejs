@@ -12,7 +12,10 @@
     </header>
     <main class="np-main">
       <section class="np-section">
-        <form action="" method="get" class="np-form">
+        <% if (error) { %>
+          <p class="np-contact-error"><%= error %></p>
+        <% } %>
+        <form action="/contact" method="post" class="np-form">
           <div class="np-form__input">
             <label for="name">Nom et prénom</label>
             <input type="text" name="name" id="name" placeholder="Entrez votre nom et prénom" required>

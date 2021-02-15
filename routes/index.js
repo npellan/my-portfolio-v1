@@ -1,4 +1,6 @@
 const express = require('express');
+const nodemailer = require('nodemailer');
+require('dotenv').config();
 const projets = require('../source/data/projets.json');
 
 const router = express.Router();
@@ -26,7 +28,34 @@ router.get('/a-propos', (req, res, next) => {
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web' });
+  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: null });
+});
+
+router.post('/contact', (req, res, next) => {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+  });
+
+  const mailOptions = {
+    from: `${req.body.email}`, // This is ignored by Gmail
+    to: process.env.GMAIL_USER,
+    subject: 'Nouveau message sur nicolaspellan.fr',
+    text: `${req.body.name} (${req.body.email}) a dit: ${req.body.message}`,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: 'Désolé, une erreur est survenue, votre message n\'a pas été envoyé' });
+    } else {
+      res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: 'Merci pour votre message, je vous répondrais très vite !' });
+    }
+  });
 });
 
 module.exports = router;
