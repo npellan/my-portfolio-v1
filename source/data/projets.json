@@ -4,59 +4,64 @@
         "slug": "atelier-bleu-piment",
         "name": "Atelier Bleu Piment",
         "year": 2020,
+        "type": "Site web en ligne",
         "tags": ["HTML", "CSS", "JS"],
         "duration": "1 semaine",
         "role" : "Chef de projet et développeur front",
         "team": ["Ariane Francescato, cliente, graphisme"],
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
-        "github": null
+        "description": "J'ai réalisé ce site web en autodidacte avant ma formation chez O'clock, en collaboration avec la cliente. Elle m'a fourni les maquettes que j'ai intégrées en HTML, CSS et JS. Le site web est en ligne à l'adresse https://www.atelierbleupiment.com.",
+        "link": "https://www.atelierbleupiment.com"
     },
     {
         "id": 2,
         "slug": "chatroom-react",
         "name": "Chatroom React",
         "year": 2021,
-        "tags": ["React", "Redux", "Socket.io"],
+        "type": "Appli web",
+        "tags": ["React", "Redux", "Socket.io", "SCSS"],
         "duration": "3 jours",
         "role" : "Développeur React",
         "team": null,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
-        "github": "https://github.com/npellan/chatroom-react-redux-socketio"
+        "description": "J'ai réalisé ce projet en autonomie lors de ma formation chez O'clock. C'est le premier projet pour lequel j'ai utilisé React Redux. J'ai également découvert Socket.io pour la gestion des messages du chat, grâce à l'utilisation des middlewares React.",
+        "link": "https://github.com/npellan/chatroom-react-redux-socketio"
     },
     {
         "id": 3,
         "slug": "search-github-api-react",
         "name": "Search Github API React",
         "year": 2021,
-        "tags": ["React", "API"],
+        "type": "Appli web",
+        "tags": ["React", "API", "SCSS"],
         "duration": "1 jour",
         "role" : "Développeur React",
         "team": null,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
-        "github": "https://github.com/npellan/search-github-api"
+        "description": "J'ai réalisé ce projet en autonomie lors de ma formation chez O'clock. Ce projet m'a permis de pratiquer la consommation d'API, en l'occurence celui de Github.",
+        "link": "https://github.com/npellan/search-github-api"
     },
     {
         "id": 4,
         "slug": "todo-list-react",
         "name": "Todo List React",
         "year": 2021,
-        "tags": ["React"],
+        "type": "Appli web",
+        "tags": ["React", "SCSS"],
         "duration": "2 jours",
         "role" : "Développeur React",
         "team": null,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
-        "github": "https://github.com/npellan/todo-list-in-react"
+        "description": "J'ai réalisé ce projet en autonomie lors de ma formation chez O'clock. Ce projet a été l'un des de mes tout premiers projets codés en React.",
+        "link": "https://github.com/npellan/todo-list-in-react"
     },
     {
         "id": 5,
         "slug": "euro-converter-react",
         "name": "Euro converter React",
         "year": 2021,
-        "tags": ["React"],
+        "type": "Appli web",
+        "tags": ["React", "SCSS"],
         "duration": "2 jours",
         "role" : "Développeur React",
         "team": null,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis ullam asperiores molestias at ipsam fuga maxime, accusantium quas exercitationem laboriosam iusto nihil dignissimos quos! Velit magnam perferendis alias fugit.",
-        "github": "https://github.com/npellan/euro-converter-in-react"
+        "description": "J'ai réalisé ce projet en autonomie lors de ma formation chez O'clock. Ce projet a été l'un des de mes tout premiers projets codés en React.",
+        "link": "https://github.com/npellan/euro-converter-in-react"
     }
 ]

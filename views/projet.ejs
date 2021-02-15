@@ -13,12 +13,15 @@
         <div>
           <h1 class="np-projet__title"><%= projet.name %></h1>
           <p class="np-projet__desc"><%= projet.description %></p>
-          <% if ((projet.github) !== null) { %>
+          <% if ((projet.link).includes("github")) { %>
             <div class="button">
-              <a href="<%= projet.github %>" class="button-text">Lien Github</a>
+              <a href="<%= projet.link %>" class="button-text">Lien Github</a>
             </div>
             <% } else { %>
-            <% } %>
+              <div class="button">
+                <a href="<%= projet.link %>" class="button-text">Lien site web</a>
+              </div>       
+            <% } %> 
         </div>
         <div>
           <h2 class="np-projet__subtitle">Technos</h2>

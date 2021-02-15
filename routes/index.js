@@ -9,7 +9,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/projets', (req, res, next) => {
-  res.render('projets', { title: 'Projets | Nicolas Pellan - Développeur web' });
+  res.render('projets', { title: 'Projets | Nicolas Pellan - Développeur web', projets });
 });
 
 router.get('/projets/:slug', (req, res, next) => {

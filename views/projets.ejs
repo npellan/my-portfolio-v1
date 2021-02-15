@@ -13,76 +13,27 @@
     <main class="np-main">
       <section class="np-section">
         <div class="np-projects">
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/atelier-bleu-piment" class="np-projects__link">
-                <img class="np-projects__image" src="/images/atelier-bleu-piment.jpg">
-                <div class="np-projects__overlay"></div>
-              </a>
+          <% for (let projet of projets) { %>
+            <div class="np-projects__container">
+              <div class="np-projects__wrapper">
+                <a href="/projets/<%= projet.slug %>" class="np-projects__link">
+                  <img class="np-projects__image" src="/images/<%= projet.slug %>.jpg">
+                  <div class="np-projects__overlay"></div>
+                </a>
+              </div>
+              <p class="np-projects__title">
+                <%= projet.name %>
+              </p>
+              <p class="np-projects__tags">
+                <%= projet.type %>
+              </p>
+              <p class="np-projects__tags">
+                <% for (let tag of projet.tags) { %>
+                  <%= tag %>.
+                <% } %>
+              </p>
             </div>
-            <p class="np-projects__title">
-              Atelier Bleu Piment
-            </p>
-            <p class="np-projects__tags">
-              HTML, CSS, JS
-            </p>
-          </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/chatroom-react" class="np-projects__link">
-                <img class="np-projects__image" src="/images/chatroom-react.jpg">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Chatroom
-            </p>
-            <p class="np-projects__tags">
-              React, Redux, Socket.io
-            </p>
-          </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/todo-list-react" class="np-projects__link">
-                <img class="np-projects__image" src="/images/todo-list-react.jpg">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Todo list
-            </p>
-            <p class="np-projects__tags">
-              React, SCSS
-            </p>
-          </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/search-github-api-react" class="np-projects__link">
-                <img class="np-projects__image" src="/images/search-github-api-react.jpg">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Search Github API
-            </p>
-            <p class="np-projects__tags">
-              React, API
-            </p>
-          </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/euro-converter-react" class="np-projects__link">
-                <img class="np-projects__image" src="/images/euro-converter-react.jpg">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Euro Converter React
-            </p>
-            <p class="np-projects__tags">
-              React, SCSS
-            </p>
-          </div>
+          <% } %>
         </div>
       </section>
     </main>
