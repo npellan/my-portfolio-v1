@@ -28,7 +28,7 @@ router.get('/a-propos', (req, res, next) => {
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: null, success: null });
+  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: false, success: false });
 });
 
 router.post('/contact', (req, res, next) => {
