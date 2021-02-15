@@ -28,7 +28,7 @@ router.get('/a-propos', (req, res, next) => {
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: null });
+  res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: null, success: null });
 });
 
 router.post('/contact', (req, res, next) => {
@@ -51,9 +51,9 @@ router.post('/contact', (req, res, next) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: 'Désolé, une erreur est survenue, votre message n\'a pas été envoyé' });
+      res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: true, message: 'Désolé, une erreur est survenue, votre message n\'a pas été envoyé' });
     } else {
-      res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', error: 'Merci pour votre message, je vous répondrais très vite !' });
+      res.render('contact', { title: 'Contact | Nicolas Pellan - Développeur web', success: true, message: 'Merci pour votre message, je vous répondrais très vite !' });
     }
   });
 });

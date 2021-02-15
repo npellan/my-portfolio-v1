@@ -1,5 +1,22 @@
 @use 'vars';
 
+@media screen and (max-width: 768px) {
+    .np-svg {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        z-index: -1;
+    }
+
+    .np-form__input > input {
+        width: 70%;
+    }
+
+    .np-form__input > textarea {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .np-svg {
         position: absolute;
@@ -52,6 +69,14 @@
         row-gap: .5rem;
     }
 
+    .np-form__input > input {
+        width: 100%;
+    }
+
+    .np-form__input > textarea {
+        width: 100%;
+    }
+
     .breadcrumb {
         display: none;
     }
@@ -59,15 +84,6 @@
     footer > .material-icons {
         bottom: 30px;
         right: 30px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .np-svg {
-        position: absolute;
-        top: 0;
-        right: 0px;
-        z-index: -1;
     }
 }
 

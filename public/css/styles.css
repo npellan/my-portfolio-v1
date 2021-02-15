@@ -460,7 +460,7 @@ footer > .material-icons.show {
   display: block;
   margin-bottom: 0.5rem;
 }
-.np-form__input > input, .np-form__input textarea {
+.np-form__input > input {
   color: #2C2C54;
   border: 1px solid #2C2C54;
   border-radius: 5px;
@@ -468,6 +468,37 @@ footer > .material-icons.show {
   background-color: white;
   -webkit-appearance: none;
   text-rendering: unset;
+  width: 30%;
+}
+.np-form__input > textarea {
+  color: #2C2C54;
+  border: 1px solid #2C2C54;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: white;
+  -webkit-appearance: none;
+  text-rendering: unset;
+  width: 50%;
+  height: 200px;
+  font-family: "Raleway", sans-serif;
+}
+
+.np-contact-success {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  display: inline-block;
+  color: white;
+  background-color: #2ecc71;
+}
+
+.np-contact-error {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  display: inline-block;
+  color: white;
+  background-color: #c0392b;
 }
 
 .np-apropos {
@@ -583,6 +614,22 @@ footer > .material-icons.show {
   border-bottom: 3px solid #2C2C54;
 }
 
+@media screen and (max-width: 768px) {
+  .np-svg {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .np-form__input > input {
+    width: 70%;
+  }
+
+  .np-form__input > textarea {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 480px) {
   .np-svg {
     position: absolute;
@@ -631,6 +678,14 @@ footer > .material-icons.show {
     row-gap: 0.5rem;
   }
 
+  .np-form__input > input {
+    width: 100%;
+  }
+
+  .np-form__input > textarea {
+    width: 100%;
+  }
+
   .breadcrumb {
     display: none;
   }
@@ -638,14 +693,6 @@ footer > .material-icons.show {
   footer > .material-icons {
     bottom: 30px;
     right: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .np-svg {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    z-index: -1;
   }
 }
 @media screen and (min-width: 1024px) {
