@@ -12,10 +12,10 @@
     </header>
     <main class="np-main">
       <section class="np-section">
-        <% if (error) { %>
+        <% if (error === true) { %>
           <p class="np-contact-error"><%= message %></p>
         <% } %>
-        <% if (success) { %>
+        <% if (success === true) { %>
           <p class="np-contact-success"><%= message %></p>
         <% } %>
         <form action="/contact" method="post" class="np-form">
