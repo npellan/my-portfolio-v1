@@ -15,12 +15,14 @@
 
 @use 'mediaqueries';
 
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
 body {
     font-family: vars.$primary-font;
     color: vars.$text-color;
     background-color: vars.$background-color;
+    font-size: 18px;
 }
 
 .np-container {

@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;700&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
 html,
 body,
@@ -558,6 +559,15 @@ footer > .material-icons.show {
   line-height: 1.5;
 }
 
+.np-cv__column-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+.np-cv__column-tools > div p {
+  line-height: 1.5;
+}
+
 .np-cv__exp {
   margin-bottom: 3rem;
 }
@@ -648,7 +658,7 @@ footer > .material-icons.show {
     margin-top: 2rem;
   }
   .np-header .np-nav__item {
-    margin: 0 1rem;
+    margin: 0 0.7rem;
     font-size: 1rem;
   }
 
@@ -674,6 +684,11 @@ footer > .material-icons.show {
   }
 
   .np-cv__column-skills {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0.5rem;
+  }
+
+  .np-cv__column-tools {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 0.5rem;
   }
@@ -710,9 +725,10 @@ footer > .material-icons.show {
   }
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #2C2C54;
   background-color: white;
+  font-size: 18px;
 }
 
 .np-container {

@@ -58,6 +58,16 @@
     }
 }
 
+.np-cv__column-tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+
+    & > div p {
+        line-height: 1.5;
+    }
+}
+
 .np-cv__exp {
     margin-bottom: 3rem;
 }

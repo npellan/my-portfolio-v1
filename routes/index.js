@@ -1,6 +1,6 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
-require('dotenv').config();
 const projets = require('../source/data/projets.json');
 
 const router = express.Router();
@@ -11,20 +11,18 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/projets', (req, res, next) => {
-  res.locals = {...res.locals, projets}
-  res.render('projets', { title: 'Projets | Nicolas Pellan - Développeur web', projets });
+  res.locals = { ...res.locals, projets };
+  res.render('projets', { title: 'Projets | Nicolas Pellan - Développeur web' });
 });
 
 router.get('/projets/:slug', (req, res, next) => {
-  const projetSlug = req.params.slug;
-
+  const { slug } = req.params;
   const projet = projets.find(
-    (elem) => elem.slug === projetSlug,
+    (elem) => elem.slug === slug,
   );
-  
-  res.locals = {...res.locals, projet}
+  res.locals = { ...res.locals, projet };
 
-  res.render('projet', { title: `${projet.name} | Nicolas Pellan - Développeur web`, projet });
+  res.render('projet', { title: `${projet.name} | Nicolas Pellan - Développeur web` });
 });
 
 router.get('/a-propos', (req, res, next) => {
