@@ -13,7 +13,7 @@
     <main class="np-main">
       <section class="np-section">
         <div class="np-projects">
-          <% for (let projet of projets) { %>
+          <% for (let projet of locals.projets) { %>
             <div class="np-projects__container">
               <div class="np-projects__wrapper">
                 <a href="/projets/<%= projet.slug %>" class="np-projects__link">

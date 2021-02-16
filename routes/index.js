@@ -11,6 +11,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/projets', (req, res, next) => {
+  res.locals = {...res.locals, projets}
   res.render('projets', { title: 'Projets | Nicolas Pellan - Développeur web', projets });
 });
 
@@ -20,6 +21,9 @@ router.get('/projets/:slug', (req, res, next) => {
   const projet = projets.find(
     (elem) => elem.slug === projetSlug,
   );
+  
+  res.locals = {...res.locals, projet}
+
   res.render('projet', { title: `${projet.name} | Nicolas Pellan - Développeur web`, projet });
 });
 
