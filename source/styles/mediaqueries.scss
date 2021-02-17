@@ -1,10 +1,24 @@
 @use 'vars';
 
 @media screen and (max-width: 768px) {
-    .np-svg {
+    .np-svg1 {
         position: absolute;
         top: 0;
-        right: 0px;
+        right: 70px;
+        z-index: -1;
+    }
+    
+    .np-svg2 {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        z-index: -1;
+    }
+    
+    .np-svg3 {
+        position: absolute;
+        top: 0;
+        right: 89px;
         z-index: -1;
     }
 
@@ -18,10 +32,24 @@
 }
 
 @media screen and (max-width: 480px) {
-    .np-svg {
+    .np-svg1 {
         position: absolute;
         top: 0;
-        right: -100px;
+        right: -90px;
+        z-index: -1;
+    }
+    
+    .np-svg2 {
+        position: absolute;
+        top: 0;
+        right: -120px;
+        z-index: -1;
+    }
+    
+    .np-svg3 {
+        position: absolute;
+        top: 0;
+        right: -60px;
         z-index: -1;
     }
     
@@ -96,6 +124,27 @@
     .np-projects {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .np-svg1 {
+        position: absolute;
+        top: 0;
+        right: 110px;
+        z-index: -1;
+    }
+    
+    .np-svg2 {
+        position: absolute;
+        top: 0;
+        right: 70px;
+        z-index: -1;
+    }
+    
+    .np-svg3 {
+        position: absolute;
+        top: 0;
+        right: 120px;
+        z-index: -1;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -105,6 +154,27 @@
 
     .np-cv__exp {
         width: 75%;
+    }
+
+    .np-svg1 {
+        position: absolute;
+        top: 0;
+        right: 150px;
+        z-index: -1;
+    }
+    
+    .np-svg2 {
+        position: absolute;
+        top: 0;
+        right: 110px;
+        z-index: -1;
+    }
+    
+    .np-svg3 {
+        position: absolute;
+        top: 0;
+        right: 170px;
+        z-index: -1;
     }
 }
 

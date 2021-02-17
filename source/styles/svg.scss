@@ -1,9 +1,23 @@
 @use 'vars';
 
-.np-svg {
+.np-svg1 {
     position: absolute;
     top: 0;
-    right: 200px;
+    right: 160px;
+    z-index: -1;
+}
+
+.np-svg2 {
+    position: absolute;
+    top: 0;
+    right: 160px;
+    z-index: -1;
+}
+
+.np-svg3 {
+    position: absolute;
+    top: 0;
+    right: 160px;
     z-index: -1;
 }
 
@@ -15,14 +29,14 @@
 
 .np-line1 {
     stroke: vars.$line1-color;
-    opacity: 0.5;
+    opacity: 0.7;
     stroke-dasharray: 2235.124267578125; 
     stroke-dashoffset: 2235.124267578125;
 }
 
 .np-line2 {
     stroke: vars.$line2-color;
-    opacity: 0.3;
+    opacity: 0.7;
     stroke-dasharray: 2137.661376953125; 
     stroke-dashoffset: 2137.661376953125;
 }

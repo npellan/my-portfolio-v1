@@ -243,6 +243,7 @@ button {
 }
 .np-footer .np-footer__infos {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .np-footer .np-footer__nav {
   margin-top: 2rem;
@@ -284,10 +285,24 @@ button {
   border-bottom: 3px solid #1dcf5d;
 }
 
-.np-svg {
+.np-svg1 {
   position: absolute;
   top: 0;
-  right: 200px;
+  right: 160px;
+  z-index: -1;
+}
+
+.np-svg2 {
+  position: absolute;
+  top: 0;
+  right: 160px;
+  z-index: -1;
+}
+
+.np-svg3 {
+  position: absolute;
+  top: 0;
+  right: 160px;
   z-index: -1;
 }
 
@@ -299,14 +314,14 @@ button {
 
 .np-line1 {
   stroke: #9AECDB;
-  opacity: 0.5;
+  opacity: 0.7;
   stroke-dasharray: 2235.1242675781;
   stroke-dashoffset: 2235.1242675781;
 }
 
 .np-line2 {
   stroke: #218C74;
-  opacity: 0.3;
+  opacity: 0.7;
   stroke-dasharray: 2137.6613769531;
   stroke-dashoffset: 2137.6613769531;
 }
@@ -324,7 +339,7 @@ button {
   }
 }
 .button {
-  background-color: #EAB543;
+  background-color: #f5e78a;
   width: 175px;
   height: 18px;
   display: flex;
@@ -546,7 +561,7 @@ footer > .material-icons.show {
 
 .np-cv__subtitle {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
@@ -625,10 +640,24 @@ footer > .material-icons.show {
 }
 
 @media screen and (max-width: 768px) {
-  .np-svg {
+  .np-svg1 {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 70px;
+    z-index: -1;
+  }
+
+  .np-svg2 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    z-index: -1;
+  }
+
+  .np-svg3 {
+    position: absolute;
+    top: 0;
+    right: 89px;
     z-index: -1;
   }
 
@@ -641,10 +670,24 @@ footer > .material-icons.show {
   }
 }
 @media screen and (max-width: 480px) {
-  .np-svg {
+  .np-svg1 {
     position: absolute;
     top: 0;
-    right: -100px;
+    right: -90px;
+    z-index: -1;
+  }
+
+  .np-svg2 {
+    position: absolute;
+    top: 0;
+    right: -120px;
+    z-index: -1;
+  }
+
+  .np-svg3 {
+    position: absolute;
+    top: 0;
+    right: -60px;
     z-index: -1;
   }
 
@@ -714,6 +757,27 @@ footer > .material-icons.show {
   .np-projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .np-svg1 {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    z-index: -1;
+  }
+
+  .np-svg2 {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    z-index: -1;
+  }
+
+  .np-svg3 {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    z-index: -1;
+  }
 }
 @media screen and (min-width: 1440px) {
   .np-projects {
@@ -722,6 +786,27 @@ footer > .material-icons.show {
 
   .np-cv__exp {
     width: 75%;
+  }
+
+  .np-svg1 {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    z-index: -1;
+  }
+
+  .np-svg2 {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    z-index: -1;
+  }
+
+  .np-svg3 {
+    position: absolute;
+    top: 0;
+    right: 170px;
+    z-index: -1;
   }
 }
 body {
