@@ -7,7 +7,7 @@
       </nav>
       <div class="np-hero">
         <h1 class="np-hero__title">Projets</h1>
-        <p class="np-hero__subtitle">Découvrez les projets sur lesquels j'ai eu le plaisir de travailler</p>
+        <p class="np-hero__subtitle">Découvrez les projets sur lesquels j'ai pris plaisir à travailler</p>
       </div>
     </header>
     <main class="np-main">
@@ -17,13 +17,13 @@
             <div class="np-projects__container">
               <div class="np-projects__wrapper">
                 <a href="/projets/<%= projet.slug %>" class="np-projects__link">
-                  <img class="np-projects__image" src="/images/<%= projet.slug %>.jpg">
+                  <img class="np-projects__image" src="/images/<%= projet.slug %>.jpg" alt="Image du projet <%= projet.name %>">
                   <div class="np-projects__overlay"></div>
                 </a>
               </div>
-              <p class="np-projects__title">
+              <h2 class="np-projects__title">
                 <%= projet.name %>
-              </p>
+              </h2>
               <p class="np-projects__tags">
                 <%= projet.type %>
               </p>
