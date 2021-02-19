@@ -7,19 +7,27 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index', {
+  res.locals = {
+    ...res.locals,
     title: 'Nicolas Pellan - Développeur web',
     description: 'Bonjour, je suis développeur web fullstack Javascript, spécialisé en React et Node.js',
     url: '/',
+  };
+  res.render('index', {
+
   });
 });
 
 router.get('/projets', (req, res, next) => {
-  res.locals = { ...res.locals, projets };
-  res.render('projets', {
+  res.locals = {
+    ...res.locals,
+    projets,
     title: 'Projets | Nicolas Pellan - Développeur web',
     description: 'Découvrez tous les projets que j\'ai réalisé en tant que développeur web fullstack Javascript, React et Node.js',
     url: '/projets',
+  };
+  res.render('projets', {
+
   });
 });
 
@@ -28,28 +36,40 @@ router.get('/projets/:slug', (req, res, next) => {
   const projet = projets.find(
     (elem) => elem.slug === slug,
   );
-  res.locals = { ...res.locals, projet };
-
-  res.render('projet', {
+  res.locals = {
+    ...res.locals,
+    projet,
     title: `${projet.name} | Nicolas Pellan - Développeur web`,
     description: `Découvrez mon travail réalisé sur le projet ${projet.name}`,
     url: `/projets/${projet.slug}`,
+  };
+
+  res.render('projet', {
+
   });
 });
 
 router.get('/a-propos', (req, res, next) => {
-  res.render('apropos', {
+  res.locals = {
+    ...res.locals,
     title: 'A propos | Nicolas Pellan - Développeur web',
     description: 'Je suis un développeur web reconverti par passion, mélomane et grand lecteur',
     url: '/a-propos',
+  };
+  res.render('apropos', {
+
   });
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('contact', {
+  res.locals = {
+    ...res.locals,
     title: 'Contact | Nicolas Pellan - Développeur web',
     description: 'Pour discuter ou pour travailler ensemble, n\'hésitez pas à me contacter',
     url: '/contact',
+  };
+  res.render('contact', {
+
   });
 });
 
