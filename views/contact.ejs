@@ -18,7 +18,7 @@
         <% if (locals.success) { %>
           <p class="np-contact-success"><%= success %></p>
         <% } %>
-        <form action="/contact" method="post" class="np-form">
+        <form action="/contact" method="post" class="np-form" aria-label="Contact form">
           <div class="np-form__input">
             <label for="name">Nom et prénom</label>
             <input type="text" name="name" id="name" placeholder="Entrez votre nom et prénom" required>

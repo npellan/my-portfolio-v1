@@ -243,15 +243,12 @@ button {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.np-footer .np-footer__nav {
-  margin-top: 2rem;
-}
 .np-footer .np-footer__nav > ul {
   display: flex;
 }
 .np-footer .np-footer__findme {
   font-size: 1.25rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .np-footer .np-footer__nav__item {
