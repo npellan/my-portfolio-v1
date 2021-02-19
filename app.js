@@ -25,7 +25,11 @@ app.use('/', router);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-  next(createError(404));
+  res.status(404).render('404', {
+    title: '404 | Nicolas Pellan - Développeur web',
+    description: 'Désolé la page que vous demandez n\'existe pas...',
+    url: '/404',
+  });
 });
 
 // error handler

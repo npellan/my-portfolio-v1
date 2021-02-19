@@ -23,28 +23,26 @@
 
 .np-line {
     fill: none;
+    opacity: 0.7;
     stroke-width: 18px;
-    animation: move 3s linear forwards;
+    animation: move 2.5s linear forwards;
 }
 
 .np-line1 {
     stroke: vars.$line1-color;
-    opacity: 0.7;
-    stroke-dasharray: 2235.124267578125; 
+    stroke-dasharray: 2235.124267578125;
     stroke-dashoffset: 2235.124267578125;
 }
 
 .np-line2 {
     stroke: vars.$line2-color;
-    opacity: 0.7;
-    stroke-dasharray: 2137.661376953125; 
+    stroke-dasharray: 2137.661376953125;
     stroke-dashoffset: 2137.661376953125;
 }
 
 .np-line3 {
     stroke: vars.$line3-color;
-    opacity: 0.7;
-    stroke-dasharray: 2216.4765625; 
+    stroke-dasharray: 2216.4765625;
     stroke-dashoffset: 2216.4765625;
 }
 

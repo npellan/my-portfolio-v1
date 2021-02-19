@@ -22,6 +22,7 @@ body {
     color: vars.$text-color;
     background-color: vars.$background-color;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 .np-container {

@@ -2,7 +2,7 @@
 
 .np-apropos {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     margin: 3rem 0 3rem 0;
     grid-gap: 3rem;
 }
@@ -37,7 +37,7 @@
 
 .np-cv__skills {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     margin-bottom: 3rem;
 }
@@ -51,7 +51,7 @@
 .np-cv__column-skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 1rem;
 
     & > div p {
         line-height: 1.5;
@@ -61,7 +61,7 @@
 .np-cv__column-tools {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 1rem;
 
     & > div p {
         line-height: 1.5;
@@ -96,4 +96,9 @@
 
 .np-cv__exp__desc {
     line-height: 1.5;
+}
+
+.np-cv__exp__tasks > li {
+    line-height: 1.5;
+    list-style: disc inside;
 }
