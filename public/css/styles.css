@@ -673,22 +673,25 @@ footer > .material-icons.show {
   .np-svg1 {
     position: absolute;
     top: 0;
-    right: -90px;
+    right: 0;
     z-index: -1;
+    overflow-x: hidden;
   }
 
   .np-svg2 {
     position: absolute;
     top: 0;
-    right: -120px;
+    right: 0;
     z-index: -1;
+    overflow-x: hidden;
   }
 
   .np-svg3 {
     position: absolute;
     top: 0;
-    right: -60px;
+    right: 0;
     z-index: -1;
+    overflow-x: hidden;
   }
 
   .np-header .np-header__top {
