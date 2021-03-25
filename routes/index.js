@@ -9,8 +9,8 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
   res.locals = {
     ...res.locals,
-    title: 'Nicolas Pellan - Développeur web fullstack Javascript, React, Node.js',
-    description: 'Bonjour, je suis développeur web fullstack Javascript, spécialisé en React et Node.js, formé à l\'école O\'Clock.',
+    title: 'Nicolas Pellan - Développeur web fullstack JavaScript, React, Node.js',
+    description: 'Bonjour, je suis développeur web fullstack JavaScript, spécialisé en React et Node.js, formé à l\'école O\'Clock.',
     url: '/',
   };
   res.render('index', {
@@ -23,7 +23,7 @@ router.get('/projets', (req, res, next) => {
     ...res.locals,
     projets,
     title: 'Projets | Nicolas Pellan - Développeur web',
-    description: 'Découvrez tous les projets que j\'ai réalisé en tant que développeur web fullstack Javascript, React et Node.js',
+    description: 'Découvrez tous les projets que j\'ai réalisé en tant que développeur web fullstack JavaScript, React et Node.js',
     url: '/projets',
   };
   res.render('projets', {
