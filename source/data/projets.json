@@ -22,7 +22,7 @@
         "duration": "1 semaine",
         "role" : "Développeur",
         "team": null,
-        "description": "<p>Quelques semaines avant la fin de ma formation chez O'clock, j'ai créé mon portfolio afin de présenter mes projets réalisés et futurs.</p><p>Mon objectif était de développer un site le plus léger possible, bien référencé et respectant les normes d'accessibilité. J'ai réalisé ce projet avec Express et Node.js en back, et HTML/CSS en front.</p>",
+        "description": "<p>Quelques semaines avant la fin de ma formation chez O'clock, j'ai créé mon portfolio afin de présenter mes projets réalisés et futurs.</p><p>Mon objectif était de développer un site le plus léger possible, bien référencé et respectant les normes d'accessibilité.</p><p>J'ai réalisé ce projet avec Express et Node.js en back, et HTML/CSS en front. Pour la mise en ligne, j'ai utilisé NGINX  sur un VPS OVH Cloud</p>",
         "link": "https://github.com/npellan/my-portfolio-v1"
     },
     {
