@@ -12,7 +12,7 @@
       <section class="np-projet">
         <div>
           <h1 class="np-projet__title"><%= projet.name %></h1>
-          <p class="np-projet__desc"><%= projet.description %></p>
+          <div class="np-projet__desc"><%- projet.description %></div>
           <% if ((projet.link).includes("github")) { %>
             <div class="button">
               <a href="<%= projet.link %>" class="button-text">Lien Github</a>
@@ -30,18 +30,20 @@
               <%= tag %>.
             <% } %>
           </p>
+          <h2 class="np-projet__subtitle">Année</h2>
+          <p class="np-projet__infos"><%= projet.year %></p>
           <h2 class="np-projet__subtitle">Durée du projet</h2>
           <p class="np-projet__infos"><%= projet.duration %></p>
           <h2 class="np-projet__subtitle">Rôle</h2>
           <p class="np-projet__infos"><%= projet.role %></p>
           <h2 class="np-projet__subtitle">Equipe</h2>
-          <p class="np-projet__infos">
-            <% if ((projet.team) !== null) { %>
-            <%= projet.team %>
-            <% } else { %>
-            -
+          <% if ((projet.team) !== null) { %>
+            <% for (let member of projet.team) { %>
+              <%= member %>.
             <% } %>
-          </p>          
+          <% } else { %>
+            <p class="np-projet__infos">-</p>
+          <% } %>         
         </div>
       </section>
     </main>

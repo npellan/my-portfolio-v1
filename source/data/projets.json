@@ -1,6 +1,19 @@
 [
     {
         "id": 1,
+        "slug": "oak-projet-fin-etude",
+        "name": "Oak",
+        "year": 2021,
+        "type": "Projet de fin d'étude en ligne",
+        "tags": ["React", "Redux", "SCSS", "Node.js", "PostgreSQL", "Squitch"],
+        "duration": "4 semaines",
+        "role" : "Lead dev front / Git master",
+        "team": ["Aurelia, product owner", "Marina, scrum master", "Antony, lead dev back / Git master"],
+        "description": "<p>Dans le cadre du projet de fin de formation de l'école O'Clock (certifiée Grande École du Numérique), mon groupe et moi avons créé Oak, un site de création de listes de lecture pour la littérature enfantine.</p><p>Notre groupe était composé d'un product owner, d'un scrum master, d'un lead dev back/Git master et j'étais lead dev front/Git master. En 4 semaines, nous avons conçu l'application de A à Z en autonomie, avec cahier des charges, wireframes, user stories, puis 3 semaines de code intensives, avec versionning via Git Flow et Github, déploiement sur Heroku pour la partie backend et Surge pour la partie frontend.</p><p>Le site est développé avec React, Redux, React Router pour la partie Front, Node.js, PostgreSQL et Squitch pour la partie Back.",
+        "link": "https://oak.surge.sh/"
+    },
+    {
+        "id": 2,
         "slug": "atelier-bleu-piment",
         "name": "Atelier Bleu Piment",
         "year": 2020,
@@ -9,11 +22,11 @@
         "duration": "1 semaine",
         "role" : "Chef de projet et développeur front",
         "team": ["Ariane Francescato, cliente, maquettes graphiques"],
-        "description": "J'ai réalisé ce site web en autodidacte avant ma formation chez O'clock, en collaboration avec la cliente. Elle m'a fourni les maquettes que j'ai intégrées en HTML, CSS et JS. Le site web est en ligne à l'adresse ci dessous.",
+        "description": "<p>La cliente, gérante d'une agence d'architecture, souhaitait créer un site vitrine pour présenter ses projets. Nous avons travaillé ensemble sur les maquettes graphiques que j'ai ensuite intégrées en HTML, CSS et JS.</p><p>Le site web est en ligne à l'adresse ci dessous.</p>",
         "link": "https://www.atelierbleupiment.com"
     },
     {
-        "id": 2,
+        "id": 3,
         "slug": "chatroom-react",
         "name": "Chatroom React",
         "year": 2021,
@@ -26,7 +39,7 @@
         "link": "https://github.com/npellan/chatroom-react-redux-socketio"
     },
     {
-        "id": 3,
+        "id": 4,
         "slug": "search-github-api-react",
         "name": "Search Github API React",
         "year": 2021,
@@ -35,11 +48,11 @@
         "duration": "1 jour",
         "role" : "Développeur React",
         "team": null,
-        "description": "J'ai réalisé ce projet en autonomie lors de ma formation chez O'clock. Ce projet m'a permis de pratiquer la consommation d'API, en l'occurence celui de Github.",
+        "description": "J'ai réalisé ce projet en autonomie lors de ma formation chez O'clock. Ce projet m'a permis de pratiquer la consommation d'une API publique, en l'occurence celui de Github.",
         "link": "https://github.com/npellan/search-github-api"
     },
     {
-        "id": 4,
+        "id": 5,
         "slug": "todo-list-react",
         "name": "Todo List React",
         "year": 2021,
@@ -52,7 +65,7 @@
         "link": "https://github.com/npellan/todo-list-in-react"
     },
     {
-        "id": 5,
+        "id": 6,
         "slug": "euro-converter-react",
         "name": "Euro converter React",
         "year": 2021,

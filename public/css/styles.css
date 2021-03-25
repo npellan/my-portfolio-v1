@@ -450,8 +450,9 @@ footer > .material-icons.show {
   margin-bottom: 2rem;
 }
 
-.np-projet__desc {
+.np-projet__desc > p {
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .np-projet__subtitle {
@@ -673,7 +674,7 @@ footer > .material-icons.show {
   .np-svg1 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 90px;
     z-index: -1;
     overflow-x: hidden;
   }
