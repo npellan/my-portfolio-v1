@@ -14,6 +14,19 @@
     },
     {
         "id": 2,
+        "slug": "portfolio",
+        "name": "Portfolio",
+        "year": 2021,
+        "type": "Site web en ligne",
+        "tags": ["HTML", "SCSS", "Node.js", "Express"],
+        "duration": "1 semaine",
+        "role" : "Développeur",
+        "team": null,
+        "description": "<p>Quelques semaines avant la fin de ma formation chez O'clock, j'ai créé mon portfolio afin de présenter mes projets réalisés et futurs.</p><p>Mon objectif était de développer un site le plus léger possible, bien référencé et respectant les normes d'accessibilité. J'ai réalisé ce projet avec Express et Node.js en back, et HTML/CSS en front.</p>",
+        "link": "https://github.com/npellan/my-portfolio-v1"
+    },
+    {
+        "id": 3,
         "slug": "atelier-bleu-piment",
         "name": "Atelier Bleu Piment",
         "year": 2020,
@@ -26,7 +39,7 @@
         "link": "https://www.atelierbleupiment.com"
     },
     {
-        "id": 3,
+        "id": 4,
         "slug": "chatroom-react",
         "name": "Chatroom React",
         "year": 2021,
@@ -39,7 +52,7 @@
         "link": "https://github.com/npellan/chatroom-react-redux-socketio"
     },
     {
-        "id": 4,
+        "id": 5,
         "slug": "search-github-api-react",
         "name": "Search Github API React",
         "year": 2021,
@@ -52,7 +65,7 @@
         "link": "https://github.com/npellan/search-github-api"
     },
     {
-        "id": 5,
+        "id": 6,
         "slug": "todo-list-react",
         "name": "Todo List React",
         "year": 2021,
@@ -65,7 +78,7 @@
         "link": "https://github.com/npellan/todo-list-in-react"
     },
     {
-        "id": 6,
+        "id": 7,
         "slug": "euro-converter-react",
         "name": "Euro converter React",
         "year": 2021,
