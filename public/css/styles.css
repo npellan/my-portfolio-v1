@@ -389,20 +389,20 @@ input:checked + .slider:before {
 
 .np-line1 {
   stroke: #9AECDB;
-  stroke-dasharray: 2235.1242675781;
-  stroke-dashoffset: 2235.1242675781;
+  stroke-dasharray: 2312.1184082031;
+  stroke-dashoffset: 2312.1184082031;
 }
 
 .np-line2 {
   stroke: #218C74;
-  stroke-dasharray: 2137.6613769531;
-  stroke-dashoffset: 2137.6613769531;
+  stroke-dasharray: 2184.2021484375;
+  stroke-dashoffset: 2184.2021484375;
 }
 
 .np-line3 {
   stroke: #706FD3;
-  stroke-dasharray: 2216.4765625;
-  stroke-dashoffset: 2216.4765625;
+  stroke-dasharray: 2248.5793457031;
+  stroke-dashoffset: 2248.5793457031;
 }
 
 @keyframes move {
