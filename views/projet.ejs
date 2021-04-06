@@ -1,4 +1,4 @@
-<% include partials/header %> 
+<% include partials/header %>
       <nav aria-label="Breadcrumb" class="breadcrumb">
         <ul>
           <li class="breadcrumb__li"><a href="/">np</a></li>
@@ -20,8 +20,8 @@
             <% } else { %>
               <div class="button">
                 <a href="<%= projet.link %>" class="button-text">Lien site web</a>
-              </div>       
-            <% } %> 
+              </div>
+            <% } %>
         </div>
         <div>
           <h2 class="np-projet__subtitle">Technos</h2>
@@ -38,16 +38,18 @@
           <p class="np-projet__infos"><%= projet.role %></p>
           <h2 class="np-projet__subtitle">Equipe</h2>
           <% if ((projet.team) !== null) { %>
-            <% for (let member of projet.team) { %>
-              <%= member %>.
-            <% } %>
+            <p class="np-projet__infos">
+              <% for (let member of projet.team) { %>
+                <%= member %>.
+              <% } %>
+            </p>
           <% } else { %>
             <p class="np-projet__infos">-</p>
-          <% } %>         
+          <% } %>
         </div>
       </section>
     </main>
-<% include partials/footer %> 
+<% include partials/footer %>
   </div>
 </body>
 </html>
