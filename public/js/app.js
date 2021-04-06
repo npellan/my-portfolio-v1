@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleDarkMode() {
     const { body } = document;
     body.classList.toggle('dark-mode');
+    document.querySelector('.np-logo-st0').classList.toggle('np-logo-dark-mode');
+    const paths1 = document.querySelectorAll('.np-logo-st1');
+    paths1.forEach((path) => path.classList.toggle('np-logo-dark-mode'));
   }
 
   const darkModeSwitch = document.querySelector('.switch__input');

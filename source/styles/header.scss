@@ -13,6 +13,18 @@
         height: 50px;
     }
 
+    .np-logo-st0 {
+        fill:none;stroke:#2C2C54;stroke-width:7;stroke-miterlimit:10;
+    }
+
+    .np-logo-st1 {
+        fill:none;stroke:#2C2C54;stroke-width:7;stroke-linejoin:bevel;stroke-miterlimit:10;
+    }
+
+    .np-logo-dark-mode {
+        stroke: white;
+    }
+
     .np-nav > ul {
         display: flex;
     }
