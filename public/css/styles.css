@@ -191,10 +191,10 @@ button {
 .np-header .np-hero__title {
   font-weight: bold;
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 .np-header .np-hero__subtitle {
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 /* The switch - the box around the slider */
