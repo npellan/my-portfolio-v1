@@ -25,6 +25,11 @@ body {
     overflow-x: hidden;
 }
 
+.dark-mode {
+    background-color: vars.$text-color;
+    color: vars.$background-color;
+}
+
 .np-container {
     max-width: 1200px;
     margin: 5rem auto 1rem;

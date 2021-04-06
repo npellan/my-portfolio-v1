@@ -20,4 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.onscroll = () => { scrollFunction(); };
 
   toTop.addEventListener('click', topFunction);
+
+  function toggleDarkMode() {
+    const { body } = document;
+    body.classList.toggle('dark-mode');
+  }
+
+  const darkModeSwitch = document.querySelector('.switch__input');
+
+  darkModeSwitch.addEventListener('change', toggleDarkMode);
 });
