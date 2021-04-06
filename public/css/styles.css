@@ -212,7 +212,6 @@ button {
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -237,6 +236,14 @@ button {
   transition: 0.4s;
 }
 
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 input:checked + .slider {
   background-color: #2C2C54;
 }
@@ -249,15 +256,6 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 25px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .np-main {
