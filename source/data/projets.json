@@ -18,7 +18,7 @@
         "name": "Portfolio",
         "year": 2021,
         "type": "Site web en ligne",
-        "tags": ["HTML", "SCSS", "Node.js", "Express"],
+        "tags": ["HTML", "SCSS", "JS", "Node.js", "Express"],
         "duration": "1 semaine",
         "role" : "Développeur",
         "team": null,

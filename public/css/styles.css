@@ -227,7 +227,7 @@ button {
 
 .slider:before {
   position: absolute;
-  content: "🌓";
+  content: "🌗";
   height: 25px;
   width: 25px;
   top: 1px;
@@ -489,12 +489,11 @@ footer > .material-icons.show {
 }
 
 .np-projects__desc {
-  margin-top: 0.5rem;
   line-height: 1.5;
 }
 
 .np-projects__tags {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-style: italic;
   line-height: 1.5;
 }
