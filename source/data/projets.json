@@ -1,6 +1,19 @@
 [
     {
         "id": 1,
+        "slug": "vizcab-dev-front",
+        "name": "Vizcab",
+        "year": 2021,
+        "type": "Application SaaS en ligne",
+        "tags": ["Vue.js", "Vuetify", "D3.js"],
+        "duration": "en cours",
+        "role" : "Développeur frontend",
+        "team": null,
+        "description": "<p>Vizcab est un SaaS de la Construction Tech qui crée des applications web pour matriser les coûts carbone lors de la construction de bâtiments.</p><p> Au sein d'une équipe de 7 développeurs, je suis le développeur front-end référent. Nous travaillons en Vue.js, associé à Vuetify. Chaque développeur est également en charge des merges requests et du déploiement des branches selon les sprints.</p>",
+        "link": "https://vizcab.io/"
+    },
+    {
+        "id": 2,
         "slug": "oak-projet-fin-etude",
         "name": "Oak",
         "year": 2021,
@@ -13,7 +26,7 @@
         "link": "https://oak.surge.sh/"
     },
     {
-        "id": 2,
+        "id": 3,
         "slug": "portfolio",
         "name": "Portfolio",
         "year": 2021,
@@ -26,7 +39,7 @@
         "link": "https://github.com/npellan/my-portfolio-v1"
     },
     {
-        "id": 3,
+        "id": 4,
         "slug": "atelier-bleu-piment",
         "name": "Atelier Bleu Piment",
         "year": 2020,
@@ -39,7 +52,7 @@
         "link": "https://www.atelierbleupiment.com"
     },
     {
-        "id": 4,
+        "id": 5,
         "slug": "chatroom-react",
         "name": "Chatroom React",
         "year": 2021,
@@ -52,7 +65,7 @@
         "link": "https://github.com/npellan/chatroom-react-redux-socketio"
     },
     {
-        "id": 5,
+        "id": 6,
         "slug": "search-github-api-react",
         "name": "Search Github API React",
         "year": 2021,
@@ -65,7 +78,7 @@
         "link": "https://github.com/npellan/search-github-api"
     },
     {
-        "id": 6,
+        "id": 7,
         "slug": "todo-list-react",
         "name": "Todo List React",
         "year": 2021,
@@ -78,7 +91,7 @@
         "link": "https://github.com/npellan/todo-list-in-react"
     },
     {
-        "id": 7,
+        "id": 8,
         "slug": "euro-converter-react",
         "name": "Euro converter React",
         "year": 2021,

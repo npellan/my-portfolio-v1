@@ -442,16 +442,11 @@ button.button-text {
 }
 
 footer > .material-icons {
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 50px;
-  /* Place the button at the bottom of the page */
-  right: 50px;
-  /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 50px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
   font-size: 36px;
   opacity: 0;
   transform: translateY(50px);
@@ -729,25 +724,21 @@ footer > .material-icons.show {
     right: 70px;
     z-index: -1;
   }
-
   .np-svg2 {
     position: absolute;
     top: 0;
     right: 25px;
     z-index: -1;
   }
-
   .np-svg3 {
     position: absolute;
     top: 0;
     right: 89px;
     z-index: -1;
   }
-
   .np-form__input > input {
     width: 70%;
   }
-
   .np-form__input > textarea {
     width: 70%;
   }
@@ -760,7 +751,6 @@ footer > .material-icons.show {
     z-index: -1;
     overflow-x: hidden;
   }
-
   .np-svg2 {
     position: absolute;
     top: 0;
@@ -768,7 +758,6 @@ footer > .material-icons.show {
     z-index: -1;
     overflow-x: hidden;
   }
-
   .np-svg3 {
     position: absolute;
     top: 0;
@@ -776,7 +765,6 @@ footer > .material-icons.show {
     z-index: -1;
     overflow-x: hidden;
   }
-
   .np-header .np-header__top {
     display: block;
     text-align: center;
@@ -790,50 +778,39 @@ footer > .material-icons.show {
     margin: 0 0.7rem;
     font-size: 1rem;
   }
-
   .np-header .np-hero__title {
     font-size: 3rem;
   }
-
   .np-projet {
     grid-template-columns: repeat(1, 1fr);
     margin: 3rem 0 7rem 0;
   }
-
   .np-projet--right {
     text-align: left;
   }
-
   .np-apropos {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .np-cv__skills {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .np-cv__column-skills {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 0.5rem;
   }
-
   .np-cv__column-tools {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 0.5rem;
   }
-
   .np-form__input > input {
     width: 100%;
   }
-
   .np-form__input > textarea {
     width: 100%;
   }
-
   .breadcrumb {
     display: none;
   }
-
   footer > .material-icons {
     bottom: 30px;
     right: 30px;
@@ -843,21 +820,18 @@ footer > .material-icons.show {
   .np-projects {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .np-svg1 {
     position: absolute;
     top: 0;
     right: 110px;
     z-index: -1;
   }
-
   .np-svg2 {
     position: absolute;
     top: 0;
     right: 70px;
     z-index: -1;
   }
-
   .np-svg3 {
     position: absolute;
     top: 0;
@@ -869,25 +843,21 @@ footer > .material-icons.show {
   .np-projects {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .np-cv__exp {
     width: 75%;
   }
-
   .np-svg1 {
     position: absolute;
     top: 0;
     right: 150px;
     z-index: -1;
   }
-
   .np-svg2 {
     position: absolute;
     top: 0;
     right: 110px;
     z-index: -1;
   }
-
   .np-svg3 {
     position: absolute;
     top: 0;

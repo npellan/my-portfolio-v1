@@ -1,9 +1,9 @@
-<% include partials/header %>
+<%- include('partials/header'); %>
       <div class="np-hero">
         <p class="np-hero__hi">Bonjour je suis</p>
         <h1 class="np-hero__title">Nicolas Pellan</h1>
         <p class="np-hero__subtitle">Développeur fullstack JavaScript</p>
-        <p class="np-hero__subtitle">React, Vue.js, Node.js</p>
+        <p class="np-hero__subtitle">Vue.js, React, Node.js</p>
         <div class="button">
           <a href="/pdf/cv-nicolas-pellan.pdf" class="button-text">Voir mon CV</a>
         </div>
@@ -16,7 +16,7 @@
       <section class="np-section ">
         <h2 class="np-section__title">A propos</h2>
         <h3 class="np-section__subtitle">Je suis développeur web reconverti par passion, mélomane et grand lecteur</h3>
-        <p class="np-section__text">Après 5 ans d’expériences en communication et webmarketing, je me suis reconverti dans le développement web par passion. Je développe des applications web fonctionnelles et esthétiques basées sur React, Vue.js et Node.js.</p>
+        <p class="np-section__text">Après 5 ans d’expériences en communication et webmarketing, je me suis reconverti dans le développement web par passion. Je développe des applications web fonctionnelles et esthétiques basées sur Vue.js, React et Node.js.</p>
         <div class="button">
           <a href="/a-propos" class="button-text">En savoir plus</a>
         </div>
@@ -24,6 +24,23 @@
       <section class="np-section ">
         <h2 class="np-section__title">Projets</h2>
         <div class="np-projects">
+          <div class="np-projects__container">
+            <div class="np-projects__wrapper">
+              <a href="/projets/vizcab-dev-front" class="np-projects__link">
+                <img class="np-projects__image" src="/images/vizcab-dev-front.jpg" alt="Image du projet Vizcab">
+                <div class="np-projects__overlay"></div>
+              </a>
+            </div>
+            <p class="np-projects__title">
+              Vizcab
+            </p>
+            <p class="np-projects__desc">
+              Contrat CDI
+            </p>
+            <p class="np-projects__tags">
+              Vue.js, Vuetify, D3.js
+            </p>
+          </div>
           <div class="np-projects__container">
             <div class="np-projects__wrapper">
               <a href="/projets/oak-projet-fin-etude" class="np-projects__link">
@@ -39,23 +56,6 @@
             </p>
             <p class="np-projects__tags">
               React, Redux, SCSS, Node.js, PostgreSQL, Squitch
-            </p>
-          </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/portfolio" class="np-projects__link">
-                <img class="np-projects__image" src="/images/portfolio.jpg" alt="Image du projet Portfolio">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Portfolio
-            </p>
-            <p class="np-projects__desc">
-              Site web en ligne
-            </p>
-            <p class="np-projects__tags">
-              HTML, SCSS, JS, Node.js, Express
             </p>
           </div>
           <div class="np-projects__container">
@@ -81,7 +81,7 @@
         </div>
       </section>
     </main>
-<% include partials/footer %>
+<%- include('partials/footer'); %>
     <svg class="np-svg np-svg1" width="994" height="2000" viewBox="0 0 994 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path class="np-line np-line1" d="M986 0L833.742 151.773C744.325 240.905 691.009 359.942 684.041 486.004V486.004C675.198 646.002 610.331 797.785 500.808 914.756L254.804 1177.49C48.6314 1397.68 -34.4957 1706.01 33.0509 2000V2000" stroke="#9AECDB" stroke-opacity="0.5" stroke-width="20"/>
     </svg>

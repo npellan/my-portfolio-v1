@@ -1,4 +1,4 @@
-<% include partials/header %>
+<%- include('partials/header'); %>
       <nav aria-label="Breadcrumb" class="breadcrumb">
         <ul>
             <li class="breadcrumb__li"><a href="/">np</a></li>
@@ -36,8 +36,8 @@
             <h2 class="np-cv__subtitle">Compétences</h2>
             <div class="np-cv__column-skills">
               <div>
-                <p>React</p>
                 <p>Vue.js</p>
+                <p>React</p>
                 <p>JavaScript</p>
                 <p>HTML, CSS</p>
               </div>
@@ -76,7 +76,18 @@
         <div class="np-cv__exp">
           <h2 class="np-cv__subtitle">Expérience</h2>
           <div class="np-cv__exp__one">
-            <h3 class="np-cv__exp__title">DÉVELOPPEUR WEB FRONT-END</h3>
+            <h3 class="np-cv__exp__title">DÉVELOPPEUR FRONT-END</h3>
+            <h4 class="np-cv__exp__subtitle">Vizcab - CDI - Lyon</h4>
+            <p class="np-cv__exp__year">depuis 2021</p>
+            <p class="np-cv__exp__desc">
+              Vizcab est un SaaS de la Construction Tech qui crée des applications web pour matriser les coûts carbone lors de la construction de bâtiments.
+            </p>
+            <p class="np-cv__exp__desc">
+              Au sein d'une équipe de 7 développeurs, je suis le développeur front-end référent. Nous travaillons en Vue.js, associé à Vuetify et D3.js. Chaque développeur est également en charge des merges requests et du déploiement des branches selon les sprints.
+            </p>
+          </div>
+          <div class="np-cv__exp__one">
+            <h3 class="np-cv__exp__title">DÉVELOPPEUR FRONT-END</h3>
             <h4 class="np-cv__exp__subtitle">O’Clock - Projet de fin d’étude - Téléprésentiel</h4>
             <p class="np-cv__exp__year">2021</p>
             <p class="np-cv__exp__desc">
@@ -195,7 +206,7 @@
         </div>
       </section>
     </main>
-<% include partials/footer %>
+<%- include('partials/footer'); %>
   </div>
 </body>
 </html>
