@@ -3,7 +3,7 @@
         "id": 1,
         "slug": "vizcab-dev-front",
         "name": "Vizcab",
-        "year": 2021,
+        "year": "depuis mai 2021",
         "type": "Application SaaS en ligne",
         "tags": ["Vue.js", "Vuetify", "D3.js"],
         "duration": "en cours",
