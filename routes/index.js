@@ -73,41 +73,42 @@ router.get('/contact', (req, res, next) => {
   });
 });
 
-router.post('/contact', (req, res, next) => {
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
-  });
+// removed due to spam in Gmail
+// router.post('/contact', (req, res, next) => {
+//   const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     port: 465,
+//     secure: true,
+//     auth: {
+//       user: process.env.GMAIL_USER,
+//       pass: process.env.GMAIL_PASS,
+//     },
+//   });
 
-  const mailOptions = {
-    from: `${req.body.email}`, // This is ignored by Gmail
-    to: process.env.GMAIL_USER,
-    subject: 'Nouveau message sur nicolaspellan.fr',
-    text: `${req.body.name} (${req.body.email}) a dit: ${req.body.message}`,
-  };
+//   const mailOptions = {
+//     from: `${req.body.email}`, // This is ignored by Gmail
+//     to: process.env.GMAIL_USER,
+//     subject: 'Nouveau message sur nicolaspellan.fr',
+//     text: `${req.body.name} (${req.body.email}) a dit: ${req.body.message}`,
+//   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      res.render('contact', {
-        title: 'Contact | Nicolas Pellan - Développeur web',
-        error: 'Désolé, une erreur est survenue, votre message n\'a pas été envoyé',
-        description: 'Pour discuter ou pour travailler ensemble, n\'hésitez pas à me contacter',
-        url: '/contact',
-      });
-    } else {
-      res.render('contact', {
-        title: 'Contact | Nicolas Pellan - Développeur web',
-        success: 'Merci pour votre message, je vous répondrais très vite !',
-        description: 'Pour discuter ou pour travailler ensemble, n\'hésitez pas à me contacter',
-        url: '/contact',
-      });
-    }
-  });
-});
+//   transporter.sendMail(mailOptions, (error, info) => {
+//     if (error) {
+//       res.render('contact', {
+//         title: 'Contact | Nicolas Pellan - Développeur web',
+//         error: 'Désolé, une erreur est survenue, votre message n\'a pas été envoyé',
+//         description: 'Pour discuter ou pour travailler ensemble, n\'hésitez pas à me contacter',
+//         url: '/contact',
+//       });
+//     } else {
+//       res.render('contact', {
+//         title: 'Contact | Nicolas Pellan - Développeur web',
+//         success: 'Merci pour votre message, je vous répondrais très vite !',
+//         description: 'Pour discuter ou pour travailler ensemble, n\'hésitez pas à me contacter',
+//         url: '/contact',
+//       });
+//     }
+//   });
+// });
 
 module.exports = router;
