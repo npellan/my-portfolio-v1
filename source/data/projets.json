@@ -5,11 +5,11 @@
         "name": "Vizcab",
         "year": "depuis mai 2021",
         "type": "Application SaaS en ligne",
-        "tags": ["Vue.js", "Vuetify", "D3.js"],
+        "tags": ["Vue.js", "Vuetify", "D3.js", "Jest", "Sonarqube", "Datadog"],
         "duration": "en cours",
         "role" : "Développeur frontend",
         "team": null,
-        "description": "<p>Vizcab est un SaaS de la Construction Tech qui crée des applications web pour maîtriser les coûts carbone lors de la construction de bâtiments.</p><p> Au sein d'une équipe de 7 développeurs, je suis le développeur front-end référent. Nous travaillons en Vue.js, associé à Vuetify. Chaque développeur est également en charge des merges requests et du déploiement des branches selon les sprints.</p>",
+        "description": "<p>Vizcab est un SaaS de la Construction Tech qui crée des applications web pour maîtriser les coûts carbone lors de la construction de bâtiments.</p><p>Au sein d’une équipe de 7 développeurs fullstack, je suis le développeur front-end référent. Entouré d’UX designers et d’ingénieurs métier, je co-construis l’application. Après les code reviews et une fois les tests validés, je déplois mes branches en production.</p>",
         "link": "https://vizcab.io/"
     },
     {
