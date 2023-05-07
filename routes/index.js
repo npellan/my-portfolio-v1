@@ -7,8 +7,10 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
+  const highlightedProjects = projets.slice(0, 3);
   res.locals = {
     ...res.locals,
+    highlightedProjects,
     title: 'Nicolas Pellan - Développeur web fullstack JavaScript, Vue.js, React, Node.js',
     description: 'Bonjour, je suis développeur web fullstack JavaScript, spécialisé en Vue.js, React et Node.js, formé à l\'école O\'Clock.',
     url: '/',

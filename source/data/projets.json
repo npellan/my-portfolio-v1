@@ -27,19 +27,6 @@
     },
     {
         "id": 3,
-        "slug": "portfolio",
-        "name": "Portfolio",
-        "year": 2021,
-        "type": "Site web en ligne",
-        "tags": ["HTML", "SCSS", "JS", "Node.js", "Express"],
-        "duration": "1 semaine",
-        "role" : "Développeur",
-        "team": null,
-        "description": "<p>Quelques semaines avant la fin de ma formation chez O'clock, j'ai créé mon portfolio afin de présenter mes projets réalisés et futurs.</p><p>Mon objectif était de développer un site le plus léger possible, bien référencé et respectant les normes d'accessibilité.</p><p>J'ai réalisé ce projet avec Express et Node.js en back, et HTML/CSS en front, sans framework. Pour la mise en ligne, j'ai utilisé NGINX  sur un VPS OVH Cloud.</p>",
-        "link": "https://github.com/npellan/my-portfolio-v1"
-    },
-    {
-        "id": 4,
         "slug": "atelier-bleu-piment",
         "name": "Atelier Bleu Piment",
         "year": 2020,
@@ -50,6 +37,19 @@
         "team": ["Ariane Francescato, cliente, maquettes graphiques"],
         "description": "<p>La cliente, gérante d'une agence d'architecture, souhaitait créer un site vitrine pour présenter ses projets. Nous avons travaillé ensemble sur les maquettes graphiques que j'ai ensuite intégrées en HTML, CSS et JS.</p><p>Le site web est en ligne à l'adresse ci dessous.</p>",
         "link": "https://www.atelierbleupiment.com"
+    },
+    {
+        "id": 4,
+        "slug": "portfolio",
+        "name": "Portfolio",
+        "year": 2021,
+        "type": "Site web en ligne",
+        "tags": ["HTML", "SCSS", "JS", "Node.js", "Express"],
+        "duration": "1 semaine",
+        "role" : "Développeur",
+        "team": null,
+        "description": "<p>Quelques semaines avant la fin de ma formation chez O'clock, j'ai créé mon portfolio afin de présenter mes projets réalisés et futurs.</p><p>Mon objectif était de développer un site le plus léger possible, bien référencé et respectant les normes d'accessibilité.</p><p>J'ai réalisé ce projet avec Express et Node.js en back, et HTML/CSS en front, sans framework. Pour la mise en ligne, j'ai utilisé NGINX  sur un VPS OVH Cloud.</p>",
+        "link": "https://github.com/npellan/my-portfolio-v1"
     },
     {
         "id": 5,

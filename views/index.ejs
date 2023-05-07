@@ -24,57 +24,27 @@
       <section class="np-section ">
         <h2 class="np-section__title">Projets</h2>
         <div class="np-projects">
+          <% for (let projet of locals.highlightedProjects) { %>
           <div class="np-projects__container">
             <div class="np-projects__wrapper">
-              <a href="/projets/vizcab-dev-front" class="np-projects__link">
-                <img class="np-projects__image" src="/images/vizcab-dev-front.jpg" alt="Image du projet Vizcab">
+              <a href="/projets/<%= projet.slug %>" class="np-projects__link">
+                <img class="np-projects__image" src="/images/<%= projet.slug %>.jpg" alt="Image du projet <%= projet.name %>">
                 <div class="np-projects__overlay"></div>
               </a>
             </div>
             <p class="np-projects__title">
-              Vizcab
+              <%= projet.name %>
             </p>
             <p class="np-projects__desc">
-              En poste depuis mai 2021
+              <%= projet.type %>
             </p>
             <p class="np-projects__tags">
-              Vue.js, Vuetify, D3.js
+              <% for (let tag of projet.tags) { %>
+                <%= tag %>.
+              <% } %>
             </p>
           </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/oak-projet-fin-etude" class="np-projects__link">
-                <img class="np-projects__image" src="/images/oak-projet-fin-etude.jpg" alt="Image du projet Oak">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Oak
-            </p>
-            <p class="np-projects__desc">
-              Projet de fin d'étude en ligne
-            </p>
-            <p class="np-projects__tags">
-              React, Redux, SCSS, Node.js, PostgreSQL, Squitch
-            </p>
-          </div>
-          <div class="np-projects__container">
-            <div class="np-projects__wrapper">
-              <a href="/projets/atelier-bleu-piment" class="np-projects__link">
-                <img class="np-projects__image" src="/images/atelier-bleu-piment.jpg" alt="Image du projet Atelier Bleu Piment">
-                <div class="np-projects__overlay"></div>
-              </a>
-            </div>
-            <p class="np-projects__title">
-              Atelier Bleu Piment
-            </p>
-            <p class="np-projects__desc">
-              Site web en ligne
-            </p>
-            <p class="np-projects__tags">
-              HTML, CSS, JS
-            </p>
-          </div>
+          <% } %>
         </div>
         <div class="button">
           <a href="/projets" class="button-text -4">Plus de projets</a>
