@@ -346,12 +346,6 @@ input:checked + .slider:before {
 .np-footer .np-footer__nav__item--linkedin a:hover {
   border-bottom: 3px solid #0b66c3;
 }
-.np-footer .np-footer__nav__item--twitter {
-  color: #1da1f3;
-}
-.np-footer .np-footer__nav__item--twitter a:hover {
-  border-bottom: 3px solid #1da1f3;
-}
 .np-footer .np-footer__nav__item--spotify {
   color: #1dcf5d;
 }
